@@ -1,0 +1,158 @@
+html, body, #container {
+  background-color: #c5ced2;
+  font-family: "filson-pro", sans-serif;
+  color: #58595b;
+  position: relative;
+  font-weight: lighter;
+  letter-spacing: 0.3px;
+  height: 100%; }
+  html p, body p, #container p {
+    line-height: 1.5em;
+    font-size: 1.5em; }
+  html h1, body h1, #container h1 {
+    color: #532d6d;
+    font-weight: 900;
+    font-size: 3em; }
+  html h2, body h2, #container h2 {
+    color: #0b213f;
+    font-size: 2.5em; }
+  html .grnDot, body .grnDot, #container .grnDot {
+    color: #87be40; }
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative; }
+
+#nav {
+  height: 100px;
+  width: 100%;
+  position: relative; }
+  #nav #hrpaLogo {
+    position: relative;
+    height: 80%;
+    width: auto;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 8px; }
+    #nav #hrpaLogo img {
+      height: 100%; }
+  #nav ul {
+    display: inline;
+    position: relative;
+    top: 70%;
+    float: right;
+    right: 30px;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: 500; }
+    #nav ul li {
+      display: inline;
+      padding: 20px 30px; }
+
+#header {
+  height: 80%;
+  background-image: url("../images/Header.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+  #header h1 {
+    color: white;
+    line-height: 50px;
+    font-size: 3.4em; }
+  #header h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 25px; }
+  #header #headerTitle {
+    position: relative;
+    display: inline-block;
+    height: 350px;
+    width: auto;
+    z-index: 2;
+    top: 27%;
+    left: 100px; }
+  #header #headerText {
+    display: inline-block;
+    position: relative;
+    top: 45%;
+    left: 40px; }
+  #header #box {
+    position: absolute;
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border: 20px solid #532d6d;
+    z-index: -1;
+    opacity: 0.8; }
+
+.content {
+  background-image: url("../images/Background.jpg");
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: scroll; }
+  .content .copy {
+    padding: 170px 100px;
+    width: 40%; }
+  .content p {
+    margin: 30px 0px; }
+  .content h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+    display: inline; }
+  .content .button {
+    display: inline;
+    position: relative;
+    font-weight: 700;
+    padding: 10px 20px;
+    top: 20px;
+    color: white;
+    background-color: #532d6d; }
+
+#intelRevo {
+  position: relative; }
+  #intelRevo span {
+    position: relative;
+    right: 22px; }
+  #intelRevo img {
+    position: absolute;
+    height: 550px;
+    right: 40px;
+    top: 70px; }
+
+#whitePaper {
+  background-image: none;
+  background-color: white;
+  position: relative; }
+  #whitePaper h2 {
+    font-size: 2em;
+    margin-top: 5px; }
+  #whitePaper img {
+    position: absolute;
+    height: 550px;
+    right: 40px;
+    top: 80px;
+    -ms-transform: rotate(7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(7deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(7deg); }
+
+#archetypes {
+  position: relative; }
+  #archetypes .copy {
+    padding: 280px 100px; }
+  #archetypes img {
+    position: absolute;
+    height: 550px;
+    right: 80px;
+    top: 50px; }
+  #archetypes .button {
+    top: 60px; }
+
+/*# sourceMappingURL=main.css.map */
