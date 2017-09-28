@@ -70,7 +70,7 @@ html, body, #container {
 }
 
 #header {
-	height: 80%;
+	height: 700px;
 	background-image: url("../images/Header.jpg");
 	background-position: center;
 	background-size: cover;
@@ -119,7 +119,7 @@ html, body, #container {
 	background-image: url("../images/Background.jpg");
 	background-size: 100% auto;
 	background-position: center top;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	.copy {
 		padding: 170px 100px;
 		width: 40%;
@@ -176,6 +176,84 @@ html, body, #container {
 	}
 }
 
+#stats {
+	.title {
+		padding: 100px 100px 0px 100px;
+		p {
+			margin-top: 60px;
+		}
+	}
+
+	#statsContainer {
+		width: 83%;
+		margin: 0 auto;
+		padding-bottom: 75px;
+		font-size: 0.8em;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		position: relative;
+		bottom: 25px;
+	}
+	.stat {
+		width: 28%;
+		display: inline-block;
+		.number {
+			color: $primary-green;
+			font-weight: 900;
+		}
+		.percent {
+			color: $primary-purple;
+			font-weight: 900;
+		}
+	}
+	#stat1 {
+		.number {
+			font-size: 14.3em;
+			line-height: 65px;
+			padding-bottom: 15px;
+			span {
+				font-size: 0.5em;
+				position: relative;
+				right: 72px
+			}
+		}
+	}
+	#stat2 {
+		margin: 0 auto;
+		.number {
+			position: relative;
+			left: 25px;
+			font-size: 7em;
+			line-height: 60px;
+			padding-bottom: 15px;
+			span.percent {
+				font-size: 1em;
+				position: relative;
+				right: 30px
+			}
+			span#fourtyTwo {
+				font-size: 1.7em;
+				position: relative;
+				top: 30px;
+			}
+		}
+	}
+	#stat3 {
+		.number {
+			font-size: 14.3em;
+			line-height: 65px;
+			padding-bottom: 15px;
+			span {
+				font-size: 0.5em;
+				position: relative;
+				right: 40px
+			}
+		}
+	}
+
+}
+
 #archetypes {
 	position: relative;
 	.copy {
@@ -189,6 +267,46 @@ html, body, #container {
 	}
 	.button {
 		top: 60px;
+	}
+}
+
+#logoSlate {
+	text-align: center;
+	background-color: white;
+	p {
+		width: 75%;
+		margin: 0 auto;
+		padding: 50px;
+		font-size: 1.2em;
+	}
+	#logos {
+		display: inline;
+		margin: 0 auto;
+		height: 100px;
+		vertical-align: middle;
+		text-align: center;
+		img {
+			padding: 50px 40px 120px 40px;
+			width: 20%;
+			vertical-align: middle;
+		}
+	}
+}
+
+#footer {
+	height: 150px;
+	background-color: $primary-purple;
+	ul {
+		width: 80%;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 20px;
+		font-weight: 300;
+		li {
+			display: inline;
+			padding: 30px 30px;
+			color: white;
+		}
 	}
 }
 

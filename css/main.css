@@ -52,7 +52,7 @@ html, body, #container {
       padding: 20px 30px; }
 
 #header {
-  height: 80%;
+  height: 700px;
   background-image: url("../images/Header.jpg");
   background-position: center;
   background-size: cover;
@@ -95,7 +95,7 @@ html, body, #container {
   background-image: url("../images/Background.jpg");
   background-size: 100% auto;
   background-position: center top;
-  background-attachment: scroll; }
+  background-attachment: fixed; }
   .content .copy {
     padding: 170px 100px;
     width: 40%; }
@@ -143,6 +143,62 @@ html, body, #container {
     /* Chrome, Safari, Opera */
     transform: rotate(7deg); }
 
+#stats .title {
+  padding: 100px 100px 0px 100px; }
+  #stats .title p {
+    margin-top: 60px; }
+#stats #statsContainer {
+  width: 83%;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  bottom: 25px; }
+#stats .stat {
+  width: 28%;
+  display: inline-block; }
+  #stats .stat .number {
+    color: #87be40;
+    font-weight: 900; }
+  #stats .stat .percent {
+    color: #532d6d;
+    font-weight: 900; }
+#stats #stat1 .number {
+  font-size: 14.3em;
+  line-height: 65px;
+  padding-bottom: 15px; }
+  #stats #stat1 .number span {
+    font-size: 0.5em;
+    position: relative;
+    right: 72px; }
+#stats #stat2 {
+  margin: 0 auto; }
+  #stats #stat2 .number {
+    position: relative;
+    left: 25px;
+    font-size: 7em;
+    line-height: 60px;
+    padding-bottom: 15px; }
+    #stats #stat2 .number span.percent {
+      font-size: 1em;
+      position: relative;
+      right: 30px; }
+    #stats #stat2 .number span#fourtyTwo {
+      font-size: 1.7em;
+      position: relative;
+      top: 30px; }
+#stats #stat3 .number {
+  font-size: 14.3em;
+  line-height: 65px;
+  padding-bottom: 15px; }
+  #stats #stat3 .number span {
+    font-size: 0.5em;
+    position: relative;
+    right: 40px; }
+
 #archetypes {
   position: relative; }
   #archetypes .copy {
@@ -154,5 +210,38 @@ html, body, #container {
     top: 50px; }
   #archetypes .button {
     top: 60px; }
+
+#logoSlate {
+  text-align: center;
+  background-color: white; }
+  #logoSlate p {
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 1.2em; }
+  #logoSlate #logos {
+    display: inline;
+    margin: 0 auto;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center; }
+    #logoSlate #logos img {
+      padding: 50px 40px 120px 40px;
+      width: 20%;
+      vertical-align: middle; }
+
+#footer {
+  height: 150px;
+  background-color: #532d6d; }
+  #footer ul {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-weight: 300; }
+    #footer ul li {
+      display: inline;
+      padding: 30px 30px;
+      color: white; }
 
 /*# sourceMappingURL=main.css.map */
