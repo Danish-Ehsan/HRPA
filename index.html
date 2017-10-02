@@ -10,6 +10,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/resets.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
 </head>
 
 <body>
@@ -19,6 +21,25 @@
 				<img src="images/HRPA_Logo.svg">
 			</div>
 			<ul id="navMenu">
+				<a href="#video1"><li>Overview</li></a>
+				<a href="#whitePaper"><li>The White Paper</li></a>
+				<a href="#video2"><li>Archetypes</li></a>
+				<a href="#video3"><li>Recommendations</li></a>
+			</ul>
+		</div>
+
+		<div id="mobNav">
+		<div id="mobNavLogo">
+			<img src="images/HRPA_Logo.svg">
+		</div>
+			<div id="navButton">
+				<div id="navInner">
+					<div class="navBtnLine"></div>
+					<div class="navBtnLine"></div>
+					<div class="navBtnLine"></div>
+				</div>
+			</div>
+			<ul>
 				<a href="#video1"><li>Overview</li></a>
 				<a href="#whitePaper"><li>The White Paper</li></a>
 				<a href="#video2"><li>Archetypes</li></a>
@@ -65,7 +86,7 @@
 					<h2>Download it. Read it. Share it.</h2>
 				</div>
 				<p>This report contains a series of challenging and thought-provoking recommendations for action by all stakeholders.</p>
-				<a href="pdf/HRPA_Scripts.pdf"><div class="button">Download it.</div></a>
+				<a href="pdf/HRPA_Scripts.pdf" download><div class="button">Download it.</div></a>
 				<div class="button">Share it.</div>
 			</div>
 			<div id="reportMkup">
@@ -104,15 +125,15 @@
 		</div>
 
 		<div id="archetypes" class="content">
+			<div id="archetypeWheel">
+				<img src="images/Archetypes_Wheel.png">
+			</div>
 			<div class="copy">
 				<div class="title">
 					<h2>The new work</h2>
 					<h1>/ archetypes<span class="grnDot">.</span></h1>
 					<a href="pdf/HRPA_Scripts.pdf"><div class="button">Download it.</div></a>
 				</div>
-			</div>
-			<div id="archetypeWheel">
-				<img src="images/Archetypes_Wheel.png">
 			</div>
 		</div>
 
@@ -142,6 +163,10 @@
 		</div>
 
 	</div><!--#container-->
+
+	<script type="text/javascript" src="js/desktop_nav.js"></script>
+	<script type="text/javascript" src="js/mobile_nav.js"></script>
+	<script type="text/javascript" src="js/scroll_to.js"></script>
 
 
 </body>

@@ -1,0 +1,341 @@
+/*-----------------------------------
+Media Queries
+-----------------------------------*/
+
+
+@media screen and (max-width: 1100px) {
+
+/*
+	#intelRevo {
+		position: relative;
+		.copy {
+			position: relative;
+			display: inline-block;
+			left: 50%;
+			padding-right: 0px;
+		}
+		span {
+			position: relative;
+			right: 18.75px;
+		}
+		#circleGraphic {
+			position: absolute;
+			height: 80%;
+			left: 6%;
+			top: 10%;
+			img {
+				height: 100%;
+			}
+		}
+	}
+*/
+
+	#intelRevo {
+		.copy {
+			left: 40%;
+		}
+		#circleGraphic {
+			left: -200px;
+		}
+	}
+
+	#whitePaper {
+		#reportMkup {
+			right: 0px;
+		}
+	}
+
+	#stats {
+		#stat2 {
+			left: 10px;
+		}
+	}
+
+	#archetypes {
+		#archetypeWheel {
+			right: 5%;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.content {
+		background-attachment: scroll;
+		.copy {
+			width: 65%;
+		}
+	}
+
+	#nav {
+		display: none;
+	}
+	#mobNav {
+		display: block;
+		position: fixed;
+	}
+
+	#intelRevo {
+		.copy {
+			left: 0;
+			right: 0;
+			display: block;
+			padding: 100px 0;
+			margin: 0 auto;
+		}
+		#circleGraphic {
+			position: relative;
+			display: block;
+			width: 60%;
+			height: auto;
+			left: 0;
+			top: 0;
+			margin: 0 auto;
+			padding: 0 0 100px 0;
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+
+	#whitePaper {
+		margin: 0 auto;
+		.copy {
+			padding: 100px 0;
+			margin: 0 auto;
+		}
+		#reportMkup {
+			position: relative;
+			display: block;
+			width: 65%;
+			height: auto;
+			margin: 0 auto;
+			left: 20px;
+			right: 0;
+			top: 0;
+			img {
+				height: auto;
+				position: relative;
+				width: 100%;
+				left: 20px;
+				-ms-transform: rotate(7deg); /* IE 9 */
+		   		-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+		  		transform: rotate(7deg);
+			}
+
+		}
+	}
+
+	#stats {
+		.title {
+			padding: 100px 0;
+			width: 65%;
+			margin: 0 auto;
+		}
+		.year {
+			width: 65%;
+			margin: 0 auto;
+		}
+		#statsContainer {
+			display: block;
+			width: 65%;
+			margin: 0 auto;
+			padding-top: 20px;
+		}
+		.stat {
+			width: 230px;
+			display: block;
+			margin: 30px auto;
+			padding: 1px;
+		}
+		#stat2 {
+			left: 0;
+			right: 0;
+		}
+		#stat3 {
+			left: 0;
+		}
+	}
+
+	#archetypes {
+		#archetypeWheel {
+			position: relative;
+			display: block;
+			width: 60%;
+			right: 0;
+			left: 0;
+			top: 0;
+			height: auto;
+			margin: 0px auto 0 auto;
+			padding-top: 90px;
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+		.copy {
+			margin: 0 auto;
+			padding: 60px 0 150px 0;
+			width: 65%;
+		}
+
+	}
+
+	#logoSlate {
+		#logos {
+			img {
+				width: 30%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html, body, #container {
+		font-size: 0.9em;
+	}
+
+	.content {
+		.copy {
+			width: 75%;
+		}
+	}
+
+	#mobNav {
+		width: 100%;
+		#mobNavLogo {
+			height: auto;
+			width: 45%;
+			margin-left: 0;
+			padding-left: 30px;
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+
+	#header {
+		height: 100%;
+		h1 {
+			line-height: 38px;
+			font-size: 3em;
+			top: 15px;
+		}
+		h2 {
+			font-size: 1.5em;
+			line-height: 25px;
+
+		}
+		#headerTitle {
+			width: 200px;
+			height: 200px;
+			top: 45%;
+		}
+		#headerText {
+			top: 20px;
+			left: 30px;
+		}
+		#box {
+			width: 200px;
+			height: 200px;
+			border-width: 15px;
+		}
+	}
+
+	#intelRevo {
+		.copy {
+			padding: 85px 0;
+		}
+		span {
+			right: 16px;
+		}
+		#circleGraphic {
+			width: 70%;
+			padding-bottom: 75px;
+		}
+	}
+
+	#whitePaper {
+		.copy{
+			padding: 85px 0;
+			h2 {
+				line-height: 28px;
+			}
+		}
+		#reportMkup {
+			width: 80%;
+			left: 10px;
+			padding: 40px 0;
+		}
+	}
+
+	#stats {
+		.title {
+			padding: 75px 0;
+		}
+		.stat {
+			width: 190px;
+		}
+		#stat1 {
+			position: relative;
+			top: 15px;
+			.number {
+				line-height: 40px;
+			}
+		}
+		#stat2 {
+			.number {
+				line-height: 35px;
+			}
+		}
+		#stat3 {
+			.number {
+				line-height: 40px;
+			}
+		}
+	}
+
+	#archetypes {
+		.copy {
+			width: 77%;
+		}
+		#archetypeWheel {
+			width: 75%;
+		}
+	}
+
+	#logoSlate {
+		padding-bottom: 65px;
+		p {
+			font-size: 1.3em;
+			padding: 50px 0;
+		}
+		#logos {
+			height: auto;
+			img {
+				width: 55%;
+				padding: 35px 0px;
+			}
+		}
+	}
+
+	#footer {
+		ul {
+			width: 95%;
+			li {
+				padding: 10px;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+

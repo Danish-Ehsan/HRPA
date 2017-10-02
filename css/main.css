@@ -32,7 +32,9 @@ html, body, #container {
 #nav {
   height: 100px;
   width: 100%;
-  position: relative; }
+  position: fixed;
+  background-color: white;
+  z-index: 10; }
   #nav #hrpaLogo {
     position: relative;
     height: 80%;
@@ -55,10 +57,88 @@ html, body, #container {
       display: inline;
       padding: 20px 30px; }
 
+#mobNav {
+  display: none;
+  height: auto;
+  border: none;
+  width: 100%;
+  background-color: white;
+  z-index: 10; }
+  #mobNav #mobNavLogo {
+    display: inline-block;
+    height: 80px;
+    padding: 20px 0;
+    margin-left: 10%; }
+    #mobNav #mobNavLogo img {
+      height: 100%; }
+  #mobNav ul {
+    margin: 10px auto;
+    font-weight: 400; }
+  #mobNav li {
+    padding: 15px 0 15px 10%;
+    margin: 0 auto;
+    font-size: 15px; }
+
+#navButton {
+  display: inline-block;
+  position: absolute;
+  border-radius: 10% 10%;
+  top: 30px;
+  right: 7%;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  cursor: pointer; }
+  #navButton #navInner {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); }
+  #navButton .navBtnLine {
+    display: block;
+    background-color: #532d6d;
+    height: 3px;
+    width: 100%;
+    margin: 7px auto;
+    position: relative;
+    top: 0;
+    transition: top 0.15s linear 0.15s, transform 0.15s; }
+    #navButton .navBtnLine:first-child {
+      margin-top: 0px; }
+    #navButton .navBtnLine.open {
+      transition: top 0.15s, transform 0.15s linear 0.15s; }
+      #navButton .navBtnLine.open:first-child {
+        top: 10px;
+        transform: rotate(45deg);
+        transform-origin: center;
+        -ms-transform-origin: center;
+        -ms-transform: rotate(45deg);
+        -webkit-transform-origin: center;
+        -webkit-transform: rotate(45deg); }
+      #navButton .navBtnLine.open:nth-child(2) {
+        transform: rotate(45deg);
+        transform-origin: center;
+        -ms-transform-origin: center;
+        -ms-transform: rotate(45deg);
+        -webkit-transform-origin: center;
+        -webkit-transform: rotate(45deg); }
+      #navButton .navBtnLine.open:last-child {
+        top: -10px;
+        transform-origin: center;
+        transform: rotate(-45deg);
+        -ms-transform-origin: center;
+        -ms-transform: rotate(-45deg);
+        -webkit-transform-origin: center;
+        -webkit-transform: rotate(-45deg); }
+
 #header {
   height: 700px;
+  padding-top: 100px;
   background-image: url("../images/Header.jpg");
-  background-position: center;
+  background-position: 50% 60px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -124,7 +204,8 @@ html, body, #container {
   #intelRevo .copy {
     position: relative;
     display: inline-block;
-    left: 50%; }
+    left: 50%;
+    padding-right: 0px; }
   #intelRevo span {
     position: relative;
     right: 18.75px; }
@@ -147,7 +228,8 @@ html, body, #container {
     position: absolute;
     height: 550px;
     right: 40px;
-    top: 55px; }
+    top: 55px;
+    overflow: hidden; }
     #whitePaper #reportMkup img {
       height: 100%;
       -ms-transform: rotate(7deg);
@@ -196,7 +278,7 @@ html, body, #container {
     position: relative;
     left: 25px;
     font-size: 7em;
-    line-height: 55px;
+    line-height: 50px;
     padding-bottom: 15px; }
     #stats #stat2 .number span#dash {
       position: relative;
@@ -258,13 +340,13 @@ html, body, #container {
 #footer {
   height: 150px;
   background-color: #532d6d;
-  background: -webkit-linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  background: -webkit-linear-gradient(-20deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  background: -o-linear-gradient(-20deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  background: -moz-linear-gradient(-20deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  background: linear-gradient(-20deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
   /* Standard syntax */ }
   #footer ul {
     width: 80%;
@@ -276,5 +358,237 @@ html, body, #container {
       display: inline;
       padding: 30px 30px;
       color: white; }
+
+/*-----------------------------------
+Media Queries
+-----------------------------------*/
+@media screen and (max-width: 1100px) {
+  /*
+  	#intelRevo {
+  		position: relative;
+  		.copy {
+  			position: relative;
+  			display: inline-block;
+  			left: 50%;
+  			padding-right: 0px;
+  		}
+  		span {
+  			position: relative;
+  			right: 18.75px;
+  		}
+  		#circleGraphic {
+  			position: absolute;
+  			height: 80%;
+  			left: 6%;
+  			top: 10%;
+  			img {
+  				height: 100%;
+  			}
+  		}
+  	}
+  */
+  #intelRevo .copy {
+    left: 40%; }
+  #intelRevo #circleGraphic {
+    left: -200px; }
+
+  #whitePaper #reportMkup {
+    right: 0px; }
+
+  #stats #stat2 {
+    left: 10px; }
+
+  #archetypes #archetypeWheel {
+    right: 5%; } }
+@media screen and (max-width: 1000px) {
+  .content {
+    background-attachment: scroll; }
+    .content .copy {
+      width: 65%; }
+
+  #nav {
+    display: none; }
+
+  #mobNav {
+    display: block;
+    position: fixed; }
+
+  #intelRevo .copy {
+    left: 0;
+    right: 0;
+    display: block;
+    padding: 100px 0;
+    margin: 0 auto; }
+  #intelRevo #circleGraphic {
+    position: relative;
+    display: block;
+    width: 60%;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    padding: 0 0 100px 0; }
+    #intelRevo #circleGraphic img {
+      height: auto;
+      width: 100%; }
+
+  #whitePaper {
+    margin: 0 auto; }
+    #whitePaper .copy {
+      padding: 100px 0;
+      margin: 0 auto; }
+    #whitePaper #reportMkup {
+      position: relative;
+      display: block;
+      width: 65%;
+      height: auto;
+      margin: 0 auto;
+      left: 20px;
+      right: 0;
+      top: 0; }
+      #whitePaper #reportMkup img {
+        height: auto;
+        position: relative;
+        width: 100%;
+        left: 20px;
+        -ms-transform: rotate(7deg);
+        /* IE 9 */
+        -webkit-transform: rotate(7deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(7deg); }
+
+  #stats .title {
+    padding: 100px 0;
+    width: 65%;
+    margin: 0 auto; }
+  #stats .year {
+    width: 65%;
+    margin: 0 auto; }
+  #stats #statsContainer {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 20px; }
+  #stats .stat {
+    width: 230px;
+    display: block;
+    margin: 30px auto;
+    padding: 1px; }
+  #stats #stat2 {
+    left: 0;
+    right: 0; }
+  #stats #stat3 {
+    left: 0; }
+
+  #archetypes #archetypeWheel {
+    position: relative;
+    display: block;
+    width: 60%;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: auto;
+    margin: 0px auto 0 auto;
+    padding-top: 90px; }
+    #archetypes #archetypeWheel img {
+      height: auto;
+      width: 100%; }
+  #archetypes .copy {
+    margin: 0 auto;
+    padding: 60px 0 150px 0;
+    width: 65%; }
+
+  #logoSlate #logos img {
+    width: 30%; } }
+@media screen and (max-width: 600px) {
+  html, body, #container {
+    font-size: 0.9em; }
+
+  .content .copy {
+    width: 75%; }
+
+  #mobNav {
+    width: 100%; }
+    #mobNav #mobNavLogo {
+      height: auto;
+      width: 45%;
+      margin-left: 0;
+      padding-left: 30px; }
+      #mobNav #mobNavLogo img {
+        height: auto;
+        width: 100%; }
+
+  #header {
+    height: 100%; }
+    #header h1 {
+      line-height: 38px;
+      font-size: 3em;
+      top: 15px; }
+    #header h2 {
+      font-size: 1.5em;
+      line-height: 25px; }
+    #header #headerTitle {
+      width: 200px;
+      height: 200px;
+      top: 45%; }
+    #header #headerText {
+      top: 20px;
+      left: 30px; }
+    #header #box {
+      width: 200px;
+      height: 200px;
+      border-width: 15px; }
+
+  #intelRevo .copy {
+    padding: 85px 0; }
+  #intelRevo span {
+    right: 16px; }
+  #intelRevo #circleGraphic {
+    width: 70%;
+    padding-bottom: 75px; }
+
+  #whitePaper .copy {
+    padding: 85px 0; }
+    #whitePaper .copy h2 {
+      line-height: 28px; }
+  #whitePaper #reportMkup {
+    width: 80%;
+    left: 10px;
+    padding: 40px 0; }
+
+  #stats .title {
+    padding: 75px 0; }
+  #stats .stat {
+    width: 190px; }
+  #stats #stat1 {
+    position: relative;
+    top: 15px; }
+    #stats #stat1 .number {
+      line-height: 40px; }
+  #stats #stat2 .number {
+    line-height: 35px; }
+  #stats #stat3 .number {
+    line-height: 40px; }
+
+  #archetypes .copy {
+    width: 77%; }
+  #archetypes #archetypeWheel {
+    width: 75%; }
+
+  #logoSlate {
+    padding-bottom: 65px; }
+    #logoSlate p {
+      font-size: 1.3em;
+      padding: 50px 0; }
+    #logoSlate #logos {
+      height: auto; }
+      #logoSlate #logos img {
+        width: 55%;
+        padding: 35px 0px; }
+
+  #footer ul {
+    width: 95%; }
+    #footer ul li {
+      padding: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
