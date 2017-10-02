@@ -4,6 +4,7 @@ html, body, #container {
   color: #58595b;
   position: relative;
   font-weight: lighter;
+  font-size: 0.95em;
   letter-spacing: 0.3px;
   height: 100%; }
   html p, body p, #container p {
@@ -18,9 +19,12 @@ html, body, #container {
     font-size: 2.5em; }
   html .grnDot, body .grnDot, #container .grnDot {
     color: #87be40; }
+  html a, body a, #container a {
+    color: #58595b; }
+    html a :hover, body a :hover, #container a :hover {
+      color: #87be40; }
 
 #container {
-  max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
   position: relative; }
@@ -62,33 +66,34 @@ html, body, #container {
   #header h1 {
     color: white;
     line-height: 50px;
-    font-size: 3.4em; }
+    font-size: 3.2em; }
   #header h2 {
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 400;
-    line-height: 40px;
-    margin-top: 25px; }
+    line-height: 35px;
+    margin-top: 20px; }
   #header #headerTitle {
     position: relative;
     display: inline-block;
     height: 350px;
     width: auto;
     z-index: 2;
-    top: 27%;
-    left: 100px; }
+    top: 30%;
+    left: 10%; }
   #header #headerText {
     display: inline-block;
     position: relative;
-    top: 45%;
+    top: 35%;
     left: 40px; }
   #header #box {
     position: absolute;
     display: inline-block;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border: 20px solid #532d6d;
     z-index: -1;
+    background-color: black;
     opacity: 0.8; }
 
 .content {
@@ -97,7 +102,7 @@ html, body, #container {
   background-position: center top;
   background-attachment: fixed; }
   .content .copy {
-    padding: 170px 100px;
+    padding: 200px 100px;
     width: 40%; }
   .content p {
     margin: 30px 0px; }
@@ -116,14 +121,20 @@ html, body, #container {
 
 #intelRevo {
   position: relative; }
+  #intelRevo .copy {
+    position: relative;
+    display: inline-block;
+    left: 50%; }
   #intelRevo span {
     position: relative;
-    right: 22px; }
-  #intelRevo img {
+    right: 18.75px; }
+  #intelRevo #circleGraphic {
     position: absolute;
-    height: 550px;
-    right: 40px;
-    top: 70px; }
+    height: 80%;
+    left: 6%;
+    top: 10%; }
+    #intelRevo #circleGraphic img {
+      height: 100%; }
 
 #whitePaper {
   background-image: none;
@@ -132,23 +143,26 @@ html, body, #container {
   #whitePaper h2 {
     font-size: 2em;
     margin-top: 5px; }
-  #whitePaper img {
+  #whitePaper #reportMkup {
     position: absolute;
     height: 550px;
     right: 40px;
-    top: 80px;
-    -ms-transform: rotate(7deg);
-    /* IE 9 */
-    -webkit-transform: rotate(7deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(7deg); }
+    top: 55px; }
+    #whitePaper #reportMkup img {
+      height: 100%;
+      -ms-transform: rotate(7deg);
+      /* IE 9 */
+      -webkit-transform: rotate(7deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(7deg); }
 
 #stats .title {
   padding: 100px 100px 0px 100px; }
-  #stats .title p {
-    margin-top: 60px; }
+#stats .year {
+  width: 80%;
+  margin: 50px auto 30px auto; }
 #stats #statsContainer {
-  width: 83%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 75px;
   font-size: 0.8em;
@@ -158,7 +172,7 @@ html, body, #container {
   position: relative;
   bottom: 25px; }
 #stats .stat {
-  width: 28%;
+  width: 300px;
   display: inline-block; }
   #stats .stat .number {
     color: #87be40;
@@ -168,46 +182,57 @@ html, body, #container {
     font-weight: 900; }
 #stats #stat1 .number {
   font-size: 14.3em;
-  line-height: 65px;
+  line-height: 55px;
   padding-bottom: 15px; }
   #stats #stat1 .number span {
     font-size: 0.5em;
     position: relative;
     right: 72px; }
 #stats #stat2 {
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  left: 30px; }
   #stats #stat2 .number {
     position: relative;
     left: 25px;
     font-size: 7em;
-    line-height: 60px;
+    line-height: 55px;
     padding-bottom: 15px; }
+    #stats #stat2 .number span#dash {
+      position: relative;
+      font-size: 0.7em;
+      top: 5px; }
     #stats #stat2 .number span.percent {
       font-size: 1em;
       position: relative;
-      right: 30px; }
+      right: 20px; }
     #stats #stat2 .number span#fourtyTwo {
       font-size: 1.7em;
       position: relative;
       top: 30px; }
-#stats #stat3 .number {
-  font-size: 14.3em;
-  line-height: 65px;
-  padding-bottom: 15px; }
-  #stats #stat3 .number span {
-    font-size: 0.5em;
-    position: relative;
-    right: 40px; }
+#stats #stat3 {
+  position: relative;
+  left: 40px; }
+  #stats #stat3 .number {
+    font-size: 14.3em;
+    line-height: 55px;
+    padding-bottom: 15px; }
+    #stats #stat3 .number span {
+      font-size: 0.5em;
+      position: relative;
+      right: 40px; }
 
 #archetypes {
   position: relative; }
   #archetypes .copy {
     padding: 280px 100px; }
-  #archetypes img {
+  #archetypes #archetypeWheel {
     position: absolute;
     height: 550px;
-    right: 80px;
+    right: 10%;
     top: 50px; }
+    #archetypes #archetypeWheel img {
+      height: 100%; }
   #archetypes .button {
     top: 60px; }
 
@@ -232,7 +257,15 @@ html, body, #container {
 
 #footer {
   height: 150px;
-  background-color: #532d6d; }
+  background-color: #532d6d;
+  background: -webkit-linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-25deg, #d9e24d, #d9e24d 15%, #532d6d 15%);
+  /* Standard syntax */ }
   #footer ul {
     width: 80%;
     text-align: center;
