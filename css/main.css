@@ -199,7 +199,9 @@ html, body, #container {
     color: white;
     background-color: #532d6d; }
   .content #shareButtons {
-    display: inline; }
+    display: inline;
+    position: relative;
+    top: 10px; }
 
 #intelRevo {
   position: relative; }
