@@ -191,7 +191,7 @@ html, body, #container {
     font-weight: 400;
     display: inline; }
   .content .button {
-    display: inline;
+    display: inline-block;
     position: relative;
     font-weight: 700;
     padding: 10px 20px;
