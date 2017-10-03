@@ -195,7 +195,7 @@ html, body, #container {
     position: relative;
     font-weight: 700;
     padding: 10px 20px;
-    top: 20px;
+    margin-top: 20px;
     color: white;
     background-color: #532d6d; }
   .content #shareButtons {
