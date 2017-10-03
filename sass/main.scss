@@ -183,14 +183,14 @@ html, body, #container {
 }
 
 #header {
-	height: 700px;
+	height: 600px;
 	padding-top: 100px;
-	background-image: url("../images/Header2.png");
-	background-position: 50% 20%;
-	background-size: auto 120%;
-	-webkit-background-size: auto 120%;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+	background-image: url("../images/Header3.png");
+	background-position: 50% 32%;
+	background-size: auto 130%;
+	-webkit-background-size: auto 130%;
+    -moz-background-size: auto 140%;
+    -o-background-size: auto 140%;
     h1 {
     	color: white;
     	line-height: 50px;
@@ -299,7 +299,7 @@ html, body, #container {
 		position: absolute;
 		height: 550px;
 		right: 40px;
-		top: 55px;
+		top: 70px;
 		overflow: hidden;
 		img {
 			height: 100%;
@@ -316,6 +316,8 @@ html, body, #container {
 	}
 	.year {
 		width: 80%;
+		font-weight: 400;
+		font-size: 1.25em;
 		margin: 60px auto 0px auto;
 	}
 
@@ -325,9 +327,14 @@ html, body, #container {
 		top: 15px;
 		width: 80%;
 		margin: 0 auto;
-		padding-bottom: 75px;
+		padding-bottom: 125px;
 		font-size: 0.8em;
+		font-weight: 400;
 		position: relative;
+	}
+	.statBody {
+		position: relative;
+		top: 5px;
 	}
 	.stat {
 		text-align: left;
@@ -338,17 +345,17 @@ html, body, #container {
 			font-weight: 900;
 		}
 		.percent {
-			color: $secondary-blue;
+			color: $primary-purple;
 			font-weight: 900;
 		}
 	}
 	#stat1 {
 		position: relative;
-		top: 52px;
 		.number {
 			font-size: 14.3em;
 			line-height: 55px;
 			padding-bottom: 15px;
+			color: #d9e059;
 			span {
 				font-size: 0.5em;
 				position: relative;
@@ -356,6 +363,8 @@ html, body, #container {
 			}
 		}
 	}
+
+	/*
 	#stat2 {
 		float: left;
 		margin: 0 auto;
@@ -387,14 +396,31 @@ html, body, #container {
 			}
 		}
 	}
-	#stat3 {
+	*/
+
+	#stat2 {
 		position: relative;
-		float: right;
-		top: 52px;
+		float: left;
 		.number {
 			font-size: 14.3em;
 			line-height: 55px;
 			padding-bottom: 15px;
+			span {
+				font-size: 0.5em;
+				position: relative;
+				right: 73px
+			}
+		}
+	}
+
+	#stat3 {
+		position: relative;
+		float: right;
+		.number {
+			font-size: 14.3em;
+			line-height: 55px;
+			padding-bottom: 15px;
+			color: #bfe076;
 			span {
 				font-size: 0.5em;
 				position: relative;
@@ -408,7 +434,7 @@ html, body, #container {
 #archetypes {
 	position: relative;
 	.copy {
-		padding: 280px 100px;
+		padding: 260px 100px;
 	}
 	#archetypeWheel {
 		position: absolute;

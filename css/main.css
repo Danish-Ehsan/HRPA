@@ -135,14 +135,14 @@ html, body, #container {
         -webkit-transform: rotate(-45deg); }
 
 #header {
-  height: 700px;
+  height: 600px;
   padding-top: 100px;
-  background-image: url("../images/Header2.png");
-  background-position: 50% 20%;
-  background-size: auto 120%;
-  -webkit-background-size: auto 120%;
-  -moz-background-size: cover;
-  -o-background-size: cover; }
+  background-image: url("../images/Header3.png");
+  background-position: 50% 32%;
+  background-size: auto 130%;
+  -webkit-background-size: auto 130%;
+  -moz-background-size: auto 140%;
+  -o-background-size: auto 140%; }
   #header h1 {
     color: white;
     line-height: 50px;
@@ -233,7 +233,7 @@ html, body, #container {
     position: absolute;
     height: 550px;
     right: 40px;
-    top: 55px;
+    top: 70px;
     overflow: hidden; }
     #whitePaper #reportMkup img {
       height: 100%;
@@ -243,84 +243,109 @@ html, body, #container {
       /* Chrome, Safari, Opera */
       transform: rotate(7deg); }
 
-#stats .title {
-  padding: 100px 100px 0px 100px; }
-#stats .year {
-  width: 80%;
-  margin: 60px auto 0px auto; }
-#stats #statsContainer {
-  text-align: center;
-  vertical-align: baseline;
-  top: 15px;
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 75px;
-  font-size: 0.8em;
-  position: relative; }
-#stats .stat {
-  text-align: left;
-  width: 250px;
-  display: inline-block; }
-  #stats .stat .number {
-    color: #87be40;
-    font-weight: 900; }
-  #stats .stat .percent {
-    color: #0076a8;
-    font-weight: 900; }
-#stats #stat1 {
-  position: relative;
-  top: 52px; }
-  #stats #stat1 .number {
-    font-size: 14.3em;
-    line-height: 55px;
-    padding-bottom: 15px; }
-    #stats #stat1 .number span {
-      font-size: 0.5em;
-      position: relative;
-      right: 55px; }
-#stats #stat2 {
-  float: left;
-  margin: 0 auto;
-  position: relative; }
-  #stats #stat2 .number {
-    text-transform: uppercase;
+#stats {
+  /*
+  #stat2 {
+  	float: left;
+  	margin: 0 auto;
+  	position: relative;
+  	.number {
+  		text-transform: uppercase;
+  		position: relative;
+  		left: 25px;
+  		top: 2px;
+  		font-size: 4.5em;
+  		line-height: 40px;
+  		padding-bottom: 15px;
+  		span#dash {
+  			position: relative;
+  			font-size: 0.7em;
+  			top: 5px;
+  		}
+  		span.percent {
+  			font-size: 1.5em;
+  			position: relative;
+  			right: 55px;
+  			top: 30px;
+  		}
+  		span#fourtyTwo {
+  			font-size: 2.55em;
+  			position: relative;
+  			top: 30px;
+  			right: 10px;
+  		}
+  	}
+  }
+  */ }
+  #stats .title {
+    padding: 100px 100px 0px 100px; }
+  #stats .year {
+    width: 80%;
+    font-weight: 400;
+    font-size: 1.25em;
+    margin: 60px auto 0px auto; }
+  #stats #statsContainer {
+    text-align: center;
+    vertical-align: baseline;
+    top: 15px;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 125px;
+    font-size: 0.8em;
+    font-weight: 400;
+    position: relative; }
+  #stats .statBody {
     position: relative;
-    left: 25px;
-    top: 2px;
-    font-size: 4.5em;
-    line-height: 40px;
-    padding-bottom: 15px; }
-    #stats #stat2 .number span#dash {
-      position: relative;
-      font-size: 0.7em;
-      top: 5px; }
-    #stats #stat2 .number span.percent {
-      font-size: 1.5em;
-      position: relative;
-      right: 55px;
-      top: 30px; }
-    #stats #stat2 .number span#fourtyTwo {
-      font-size: 2.55em;
-      position: relative;
-      top: 30px;
-      right: 10px; }
-#stats #stat3 {
-  position: relative;
-  float: right;
-  top: 52px; }
-  #stats #stat3 .number {
-    font-size: 14.3em;
-    line-height: 55px;
-    padding-bottom: 15px; }
-    #stats #stat3 .number span {
-      font-size: 0.5em;
-      position: relative;
-      right: 40px; }
+    top: 5px; }
+  #stats .stat {
+    text-align: left;
+    width: 250px;
+    display: inline-block; }
+    #stats .stat .number {
+      color: #87be40;
+      font-weight: 900; }
+    #stats .stat .percent {
+      color: #532d6d;
+      font-weight: 900; }
+  #stats #stat1 {
+    position: relative; }
+    #stats #stat1 .number {
+      font-size: 14.3em;
+      line-height: 55px;
+      padding-bottom: 15px;
+      color: #d9e059; }
+      #stats #stat1 .number span {
+        font-size: 0.5em;
+        position: relative;
+        right: 55px; }
+  #stats #stat2 {
+    position: relative;
+    float: left; }
+    #stats #stat2 .number {
+      font-size: 14.3em;
+      line-height: 55px;
+      padding-bottom: 15px; }
+      #stats #stat2 .number span {
+        font-size: 0.5em;
+        position: relative;
+        right: 73px; }
+  #stats #stat3 {
+    position: relative;
+    float: right; }
+    #stats #stat3 .number {
+      font-size: 14.3em;
+      line-height: 55px;
+      padding-bottom: 15px;
+      color: #bfe076; }
+      #stats #stat3 .number span {
+        font-size: 0.5em;
+        position: relative;
+        right: 40px; }
 
 #archetypes {
   position: relative; }
   #archetypes .copy {
-    padding: 280px 100px; }
+    padding: 260px 100px; }
   #archetypes #archetypeWheel {
     position: absolute;
     height: 550px;
@@ -483,7 +508,8 @@ Media Queries
     top: 0px;
     display: block;
     width: 65%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 40px; }
   #stats .stat {
     width: 230px;
     display: block;
@@ -512,7 +538,7 @@ Media Queries
     top: 0;
     height: auto;
     margin: 0px auto 0 auto;
-    padding-top: 90px; }
+    padding-top: 75px; }
     #archetypes #archetypeWheel img {
       height: auto;
       width: 100%; }
@@ -554,10 +580,10 @@ Media Queries
     top: 15px; }
 
   #header {
-    background-position: 55% 20%; }
+    background-position: 55% 32%; }
 
   #header {
-    height: 100%; }
+    height: 80%; }
     #header h1 {
       line-height: 35px;
       font-size: 2.85em;
@@ -595,7 +621,7 @@ Media Queries
       line-height: 28px; }
   #whitePaper #reportMkup {
     width: 85%;
-    left: 10px;
+    left: 0px;
     padding: 15px 0; }
 
   #stats .title {
@@ -612,8 +638,8 @@ Media Queries
       line-height: 40px; }
   #stats #stat2 .number {
     line-height: 35px; }
-    #stats #stat2 .number span#fourtyTwo {
-      font-size: 2.7em; }
+    #stats #stat2 .number span {
+      right: 57px; }
   #stats #stat3 {
     top: 0px; }
     #stats #stat3 .number {
