@@ -3,6 +3,8 @@ $primary-green: #87be40;
 $primary-grey: #58595b;
 $primary-blue: #0b213f;
 $secondary-grey: #c5ced2;
+$secondary-green: #d9e24d;
+$secondary-blue: #0076a8;
 
 html, body, #container {
 	background-color: $secondary-grey;
@@ -15,16 +17,16 @@ html, body, #container {
 	height: 100%;
 	p {
 		line-height: 1.5em;
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 	h1 {
 		color: $primary-purple;
 		font-weight: 900;
-		font-size: 3em;
+		font-size: 2.9em;
 	}
 	h2 {
 		color: $primary-blue;
-		font-size: 2.5em;
+		font-size: 2.4em;
 	}
 	.grnDot {
 		color: $primary-green;
@@ -32,7 +34,7 @@ html, body, #container {
 	a {
 		color: $primary-grey;
 		:hover {
-			color: $primary-green;
+			color: $secondary-green;
 		}
 	}
 }
@@ -67,14 +69,11 @@ html, body, #container {
 		float: right;
 		right: 30px;
 		letter-spacing: 1px;
-		font-size: 0.8em;
+		font-size: 0.95em;
 		font-weight: 500;
 		li {
 			display: inline;
 			padding: 20px 30px;
-
-		}
-		a {
 
 		}
 	}
@@ -186,10 +185,10 @@ html, body, #container {
 #header {
 	height: 700px;
 	padding-top: 100px;
-	background-image: url("../images/Header.jpg");
-	background-position: 50% 60px;
-	background-size: cover;
-	-webkit-background-size: cover;
+	background-image: url("../images/Header2.png");
+	background-position: 50% 20%;
+	background-size: auto 120%;
+	-webkit-background-size: auto 120%;
     -moz-background-size: cover;
     -o-background-size: cover;
     h1 {
@@ -232,7 +231,7 @@ html, body, #container {
 }
 
 .content {
-	background-image: url("../images/Background.jpg");
+	background-image: url("../images/Background_Dktp.jpg");
 	background-size: 100% auto;
 	background-position: center top;
 	background-attachment: fixed;
@@ -244,7 +243,7 @@ html, body, #container {
 		margin: 30px 0px;
 	}
 	h3 {
-		font-size: 1.7em;
+		font-size: 1.6em;
 		font-weight: 400;
 		display: inline;
 	}
@@ -252,7 +251,7 @@ html, body, #container {
 		display: inline-block;
 		position: relative;
 		font-weight: 700;
-		padding: 10px 20px;
+		padding: 14px 20px;
 		margin-top: 20px;
 		color: white;
 		background-color: $primary-purple;
@@ -261,6 +260,7 @@ html, body, #container {
 		display: inline;
 		position: relative;
 		top: 10px;
+		right: 3px;
 	}
 }
 
@@ -274,7 +274,7 @@ html, body, #container {
 	}
 	span {
 		position: relative;
-		right: 18.75px;
+		right: 18.15px;
 	}
 	#circleGraphic {
 		position: absolute;
@@ -316,7 +316,7 @@ html, body, #container {
 	}
 	.year {
 		width: 80%;
-		margin: 50px auto 30px auto;
+		margin: 60px auto 0px auto;
 	}
 
 	#statsContainer {
@@ -331,14 +331,14 @@ html, body, #container {
 		bottom: 25px;
 	}
 	.stat {
-		width: 300px;
+		width: 250px;
 		display: inline-block;
 		.number {
 			color: $primary-green;
 			font-weight: 900;
 		}
 		.percent {
-			color: $primary-purple;
+			color: $secondary-blue;
 			font-weight: 900;
 		}
 	}
@@ -350,7 +350,7 @@ html, body, #container {
 			span {
 				font-size: 0.5em;
 				position: relative;
-				right: 72px
+				right: 60px
 			}
 		}
 	}
@@ -359,10 +359,12 @@ html, body, #container {
 		position: relative;
 		left: 30px;
 		.number {
+			text-transform: uppercase;
 			position: relative;
 			left: 25px;
-			font-size: 7em;
-			line-height: 50px;
+			top: 2px;
+			font-size: 4.5em;
+			line-height: 40px;
 			padding-bottom: 15px;
 			span#dash {
 				position: relative;
@@ -370,20 +372,23 @@ html, body, #container {
 				top: 5px;
 			}
 			span.percent {
-				font-size: 1em;
+				font-size: 1.5em;
 				position: relative;
-				right: 20px
+				right: 55px;
+				top: 30px;
 			}
 			span#fourtyTwo {
-				font-size: 1.7em;
+				font-size: 2.55em;
 				position: relative;
 				top: 30px;
+				right: 10px;
 			}
 		}
 	}
 	#stat3 {
 		position: relative;
 		left: 40px;
+		top: 23px;
 		.number {
 			font-size: 14.3em;
 			line-height: 55px;
@@ -413,7 +418,7 @@ html, body, #container {
 		}
 	}
 	.button {
-		top: 60px;
+		margin-top: 40px;
 	}
 }
 
@@ -443,16 +448,19 @@ html, body, #container {
 #footer {
 	height: 150px;
 	background-color: $primary-purple;
-	background: -webkit-linear-gradient(-20deg, #d9e24d, #d9e24d 15%, $primary-purple 15%); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(-20deg, #d9e24d, #d9e24d 15%, $primary-purple 15%); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(-20deg, #d9e24d, #d9e24d 15%, $primary-purple 15%); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(-20deg, #d9e24d, #d9e24d 15%, $primary-purple 15%); /* Standard syntax */
+	background: -webkit-linear-gradient(-20deg, $secondary-green, $secondary-green 15%, $primary-purple 15%); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(-20deg, $secondary-green, $secondary-green 15%, $primary-purple 15%); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(-20deg, $secondary-green, $secondary-green 15%, $primary-purple 15%); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(-20deg, $secondary-green, $secondary-green 15%, $primary-purple 15%); /* Standard syntax */
 	ul {
 		width: 80%;
 		text-align: center;
 		margin: 0 auto;
 		padding-top: 20px;
 		font-weight: 300;
+		a:hover {
+			font-weight: 400;
+		}
 		li {
 			display: inline;
 			padding: 30px 30px;

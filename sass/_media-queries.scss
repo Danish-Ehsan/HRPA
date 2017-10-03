@@ -151,6 +151,9 @@ Media Queries
 			margin: 30px auto;
 			padding: 1px;
 		}
+		#stat1 {
+			margin-top: 15px;
+		}
 		#stat2 {
 			left: 0;
 			right: 0;
@@ -199,6 +202,7 @@ Media Queries
 	}
 
 	.content {
+		background-image: url("../images/Background.jpg");
 		.copy {
 			width: 75%;
 		}
@@ -208,9 +212,10 @@ Media Queries
 		width: 100%;
 		#mobNavLogo {
 			height: auto;
-			width: 45%;
+			width: 35%;
 			margin-left: 0;
-			padding-left: 30px;
+			padding: 15px 0 15px 30px;
+
 			img {
 				height: auto;
 				width: 100%;
@@ -218,12 +223,21 @@ Media Queries
 		}
 	}
 
+	#navButton {
+		top: 15px;
+	}
+
+	#header {
+		background-position: 55% 20%;
+	}
+
 	#header {
 		height: 100%;
 		h1 {
-			line-height: 38px;
-			font-size: 3em;
-			top: 15px;
+			line-height: 35px;
+			font-size: 2.85em;
+			position: relative;
+			top: 5px;
 		}
 		h2 {
 			font-size: 1.5em;
@@ -236,7 +250,7 @@ Media Queries
 			top: 45%;
 		}
 		#headerText {
-			top: 20px;
+			top: 28px;
 			left: 30px;
 		}
 		#box {
@@ -251,11 +265,14 @@ Media Queries
 			padding: 85px 0;
 		}
 		span {
-			right: 16px;
+			right: 15.5px;
 		}
 		#circleGraphic {
-			width: 70%;
+			width: 80%;
 			padding-bottom: 75px;
+		}
+		h3 {
+			line-height: 25px;
 		}
 	}
 
@@ -267,7 +284,7 @@ Media Queries
 			}
 		}
 		#reportMkup {
-			width: 80%;
+			width: 75%;
 			left: 10px;
 			padding: 40px 0;
 		}
@@ -278,7 +295,7 @@ Media Queries
 			padding: 75px 0;
 		}
 		.stat {
-			width: 190px;
+			width: 200px;
 		}
 		#stat1 {
 			position: relative;
@@ -301,7 +318,8 @@ Media Queries
 
 	#archetypes {
 		.copy {
-			width: 77%;
+			width: 65%;
+			padding-bottom: 70px;
 		}
 		#archetypeWheel {
 			width: 75%;

@@ -9,20 +9,20 @@ html, body, #container {
   height: 100%; }
   html p, body p, #container p {
     line-height: 1.5em;
-    font-size: 1.5em; }
+    font-size: 1.4em; }
   html h1, body h1, #container h1 {
     color: #532d6d;
     font-weight: 900;
-    font-size: 3em; }
+    font-size: 2.9em; }
   html h2, body h2, #container h2 {
     color: #0b213f;
-    font-size: 2.5em; }
+    font-size: 2.4em; }
   html .grnDot, body .grnDot, #container .grnDot {
     color: #87be40; }
   html a, body a, #container a {
     color: #58595b; }
     html a :hover, body a :hover, #container a :hover {
-      color: #87be40; }
+      color: #d9e24d; }
 
 #container {
   margin: 0 auto;
@@ -51,7 +51,7 @@ html, body, #container {
     float: right;
     right: 30px;
     letter-spacing: 1px;
-    font-size: 0.8em;
+    font-size: 0.95em;
     font-weight: 500; }
     #nav ul li {
       display: inline;
@@ -137,10 +137,10 @@ html, body, #container {
 #header {
   height: 700px;
   padding-top: 100px;
-  background-image: url("../images/Header.jpg");
-  background-position: 50% 60px;
-  background-size: cover;
-  -webkit-background-size: cover;
+  background-image: url("../images/Header2.png");
+  background-position: 50% 20%;
+  background-size: auto 120%;
+  -webkit-background-size: auto 120%;
   -moz-background-size: cover;
   -o-background-size: cover; }
   #header h1 {
@@ -177,7 +177,7 @@ html, body, #container {
     opacity: 0.8; }
 
 .content {
-  background-image: url("../images/Background.jpg");
+  background-image: url("../images/Background_Dktp.jpg");
   background-size: 100% auto;
   background-position: center top;
   background-attachment: fixed; }
@@ -187,21 +187,22 @@ html, body, #container {
   .content p {
     margin: 30px 0px; }
   .content h3 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: 400;
     display: inline; }
   .content .button {
     display: inline-block;
     position: relative;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 14px 20px;
     margin-top: 20px;
     color: white;
     background-color: #532d6d; }
   .content #shareButtons {
     display: inline;
     position: relative;
-    top: 10px; }
+    top: 10px;
+    right: 3px; }
 
 #intelRevo {
   position: relative; }
@@ -212,7 +213,7 @@ html, body, #container {
     padding-right: 0px; }
   #intelRevo span {
     position: relative;
-    right: 18.75px; }
+    right: 18.15px; }
   #intelRevo #circleGraphic {
     position: absolute;
     height: 80%;
@@ -246,7 +247,7 @@ html, body, #container {
   padding: 100px 100px 0px 100px; }
 #stats .year {
   width: 80%;
-  margin: 50px auto 30px auto; }
+  margin: 60px auto 0px auto; }
 #stats #statsContainer {
   width: 80%;
   margin: 0 auto;
@@ -258,13 +259,13 @@ html, body, #container {
   position: relative;
   bottom: 25px; }
 #stats .stat {
-  width: 300px;
+  width: 250px;
   display: inline-block; }
   #stats .stat .number {
     color: #87be40;
     font-weight: 900; }
   #stats .stat .percent {
-    color: #532d6d;
+    color: #0076a8;
     font-weight: 900; }
 #stats #stat1 .number {
   font-size: 14.3em;
@@ -273,32 +274,37 @@ html, body, #container {
   #stats #stat1 .number span {
     font-size: 0.5em;
     position: relative;
-    right: 72px; }
+    right: 60px; }
 #stats #stat2 {
   margin: 0 auto;
   position: relative;
   left: 30px; }
   #stats #stat2 .number {
+    text-transform: uppercase;
     position: relative;
     left: 25px;
-    font-size: 7em;
-    line-height: 50px;
+    top: 2px;
+    font-size: 4.5em;
+    line-height: 40px;
     padding-bottom: 15px; }
     #stats #stat2 .number span#dash {
       position: relative;
       font-size: 0.7em;
       top: 5px; }
     #stats #stat2 .number span.percent {
-      font-size: 1em;
+      font-size: 1.5em;
       position: relative;
-      right: 20px; }
-    #stats #stat2 .number span#fourtyTwo {
-      font-size: 1.7em;
-      position: relative;
+      right: 55px;
       top: 30px; }
+    #stats #stat2 .number span#fourtyTwo {
+      font-size: 2.55em;
+      position: relative;
+      top: 30px;
+      right: 10px; }
 #stats #stat3 {
   position: relative;
-  left: 40px; }
+  left: 40px;
+  top: 23px; }
   #stats #stat3 .number {
     font-size: 14.3em;
     line-height: 55px;
@@ -320,7 +326,7 @@ html, body, #container {
     #archetypes #archetypeWheel img {
       height: 100%; }
   #archetypes .button {
-    top: 60px; }
+    margin-top: 40px; }
 
 #logoSlate {
   text-align: center;
@@ -358,6 +364,8 @@ html, body, #container {
     margin: 0 auto;
     padding-top: 20px;
     font-weight: 300; }
+    #footer ul a:hover {
+      font-weight: 400; }
     #footer ul li {
       display: inline;
       padding: 30px 30px;
@@ -478,6 +486,8 @@ Media Queries
     display: block;
     margin: 30px auto;
     padding: 1px; }
+  #stats #stat1 {
+    margin-top: 15px; }
   #stats #stat2 {
     left: 0;
     right: 0; }
@@ -508,26 +518,35 @@ Media Queries
   html, body, #container {
     font-size: 0.9em; }
 
-  .content .copy {
-    width: 75%; }
+  .content {
+    background-image: url("../images/Background.jpg"); }
+    .content .copy {
+      width: 75%; }
 
   #mobNav {
     width: 100%; }
     #mobNav #mobNavLogo {
       height: auto;
-      width: 45%;
+      width: 35%;
       margin-left: 0;
-      padding-left: 30px; }
+      padding: 15px 0 15px 30px; }
       #mobNav #mobNavLogo img {
         height: auto;
         width: 100%; }
 
+  #navButton {
+    top: 15px; }
+
+  #header {
+    background-position: 55% 20%; }
+
   #header {
     height: 100%; }
     #header h1 {
-      line-height: 38px;
-      font-size: 3em;
-      top: 15px; }
+      line-height: 35px;
+      font-size: 2.85em;
+      position: relative;
+      top: 5px; }
     #header h2 {
       font-size: 1.5em;
       line-height: 25px; }
@@ -536,7 +555,7 @@ Media Queries
       height: 200px;
       top: 45%; }
     #header #headerText {
-      top: 20px;
+      top: 28px;
       left: 30px; }
     #header #box {
       width: 200px;
@@ -546,24 +565,26 @@ Media Queries
   #intelRevo .copy {
     padding: 85px 0; }
   #intelRevo span {
-    right: 16px; }
+    right: 15.5px; }
   #intelRevo #circleGraphic {
-    width: 70%;
+    width: 80%;
     padding-bottom: 75px; }
+  #intelRevo h3 {
+    line-height: 25px; }
 
   #whitePaper .copy {
     padding: 85px 0; }
     #whitePaper .copy h2 {
       line-height: 28px; }
   #whitePaper #reportMkup {
-    width: 80%;
+    width: 75%;
     left: 10px;
     padding: 40px 0; }
 
   #stats .title {
     padding: 75px 0; }
   #stats .stat {
-    width: 190px; }
+    width: 200px; }
   #stats #stat1 {
     position: relative;
     top: 15px; }
@@ -575,7 +596,8 @@ Media Queries
     line-height: 40px; }
 
   #archetypes .copy {
-    width: 77%; }
+    width: 65%;
+    padding-bottom: 70px; }
   #archetypes #archetypeWheel {
     width: 75%; }
 
