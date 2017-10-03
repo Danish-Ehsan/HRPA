@@ -516,7 +516,8 @@ Media Queries
     width: 30%; } }
 @media screen and (max-width: 600px) {
   html, body, #container {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    font-weight: 400; }
 
   .content {
     background-image: url("../images/Background.jpg"); }
@@ -596,7 +597,7 @@ Media Queries
     line-height: 40px; }
 
   #archetypes .copy {
-    width: 65%;
+    width: 67%;
     padding-bottom: 70px; }
   #archetypes #archetypeWheel {
     width: 75%; }
@@ -613,7 +614,8 @@ Media Queries
         padding: 35px 0px; }
 
   #footer ul {
-    width: 95%; }
+    width: 95%;
+    font-weight: 400; }
     #footer ul li {
       padding: 10px; } }
 

@@ -199,6 +199,7 @@ Media Queries
 @media screen and (max-width: 600px) {
 	html, body, #container {
 		font-size: 0.9em;
+		font-weight: 400;
 	}
 
 	.content {
@@ -318,7 +319,7 @@ Media Queries
 
 	#archetypes {
 		.copy {
-			width: 65%;
+			width: 67%;
 			padding-bottom: 70px;
 		}
 		#archetypeWheel {
@@ -344,6 +345,7 @@ Media Queries
 	#footer {
 		ul {
 			width: 95%;
+			font-weight: 400;
 			li {
 				padding: 10px;
 			}
