@@ -249,16 +249,16 @@ html, body, #container {
   width: 80%;
   margin: 60px auto 0px auto; }
 #stats #statsContainer {
+  text-align: center;
+  vertical-align: baseline;
+  top: 15px;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 75px;
   font-size: 0.8em;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-  bottom: 25px; }
+  position: relative; }
 #stats .stat {
+  text-align: left;
   width: 250px;
   display: inline-block; }
   #stats .stat .number {
@@ -267,18 +267,21 @@ html, body, #container {
   #stats .stat .percent {
     color: #0076a8;
     font-weight: 900; }
-#stats #stat1 .number {
-  font-size: 14.3em;
-  line-height: 55px;
-  padding-bottom: 15px; }
-  #stats #stat1 .number span {
-    font-size: 0.5em;
-    position: relative;
-    right: 60px; }
-#stats #stat2 {
-  margin: 0 auto;
+#stats #stat1 {
   position: relative;
-  left: 30px; }
+  top: 52px; }
+  #stats #stat1 .number {
+    font-size: 14.3em;
+    line-height: 55px;
+    padding-bottom: 15px; }
+    #stats #stat1 .number span {
+      font-size: 0.5em;
+      position: relative;
+      right: 55px; }
+#stats #stat2 {
+  float: left;
+  margin: 0 auto;
+  position: relative; }
   #stats #stat2 .number {
     text-transform: uppercase;
     position: relative;
@@ -303,8 +306,8 @@ html, body, #container {
       right: 10px; }
 #stats #stat3 {
   position: relative;
-  left: 40px;
-  top: 23px; }
+  float: right;
+  top: 52px; }
   #stats #stat3 .number {
     font-size: 14.3em;
     line-height: 55px;
@@ -477,21 +480,27 @@ Media Queries
     width: 65%;
     margin: 0 auto; }
   #stats #statsContainer {
+    top: 0px;
     display: block;
     width: 65%;
-    margin: 0 auto;
-    padding-top: 20px; }
+    margin: 0 auto; }
   #stats .stat {
     width: 230px;
     display: block;
     margin: 30px auto;
     padding: 1px; }
   #stats #stat1 {
+    top: 7px;
+    float: default;
     margin-top: 15px; }
   #stats #stat2 {
+    top: 0px;
+    float: none;
     left: 0;
     right: 0; }
   #stats #stat3 {
+    top: 0px;
+    float: none;
     left: 0; }
 
   #archetypes #archetypeWheel {
@@ -518,11 +527,17 @@ Media Queries
   html, body, #container {
     font-size: 0.9em;
     font-weight: 400; }
+    html h2, body h2, #container h2 {
+      color: #58595b; }
 
   .content {
     background-image: url("../images/Background.jpg"); }
     .content .copy {
       width: 75%; }
+    .content h3 {
+      color: #87be40;
+      font-size: 1.4em;
+      font-weight: 600; }
 
   #mobNav {
     width: 100%; }
@@ -550,7 +565,8 @@ Media Queries
       top: 5px; }
     #header h2 {
       font-size: 1.5em;
-      line-height: 25px; }
+      line-height: 25px;
+      color: white; }
     #header #headerTitle {
       width: 200px;
       height: 200px;
@@ -578,23 +594,30 @@ Media Queries
     #whitePaper .copy h2 {
       line-height: 28px; }
   #whitePaper #reportMkup {
-    width: 75%;
+    width: 85%;
     left: 10px;
-    padding: 40px 0; }
+    padding: 15px 0; }
 
   #stats .title {
     padding: 75px 0; }
+  #stats #statsContainer {
+    position: relative;
+    top: 0px;
+    bottom: 20px; }
   #stats .stat {
     width: 200px; }
   #stats #stat1 {
-    position: relative;
-    top: 15px; }
+    position: relative; }
     #stats #stat1 .number {
       line-height: 40px; }
   #stats #stat2 .number {
     line-height: 35px; }
-  #stats #stat3 .number {
-    line-height: 40px; }
+    #stats #stat2 .number span#fourtyTwo {
+      font-size: 2.7em; }
+  #stats #stat3 {
+    top: 0px; }
+    #stats #stat3 .number {
+      line-height: 40px; }
 
   #archetypes .copy {
     width: 67%;
@@ -613,10 +636,12 @@ Media Queries
         width: 55%;
         padding: 35px 0px; }
 
-  #footer ul {
-    width: 95%;
-    font-weight: 400; }
-    #footer ul li {
-      padding: 10px; } }
+  #footer {
+    height: 120px; }
+    #footer ul {
+      width: 95%;
+      font-weight: 400; }
+      #footer ul li {
+        padding: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

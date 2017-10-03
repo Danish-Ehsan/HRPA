@@ -320,17 +320,17 @@ html, body, #container {
 	}
 
 	#statsContainer {
+		text-align: center;
+		vertical-align: baseline;
+		top: 15px;
 		width: 80%;
 		margin: 0 auto;
 		padding-bottom: 75px;
 		font-size: 0.8em;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
 		position: relative;
-		bottom: 25px;
 	}
 	.stat {
+		text-align: left;
 		width: 250px;
 		display: inline-block;
 		.number {
@@ -343,6 +343,8 @@ html, body, #container {
 		}
 	}
 	#stat1 {
+		position: relative;
+		top: 52px;
 		.number {
 			font-size: 14.3em;
 			line-height: 55px;
@@ -350,14 +352,14 @@ html, body, #container {
 			span {
 				font-size: 0.5em;
 				position: relative;
-				right: 60px
+				right: 55px;
 			}
 		}
 	}
 	#stat2 {
+		float: left;
 		margin: 0 auto;
 		position: relative;
-		left: 30px;
 		.number {
 			text-transform: uppercase;
 			position: relative;
@@ -387,8 +389,8 @@ html, body, #container {
 	}
 	#stat3 {
 		position: relative;
-		left: 40px;
-		top: 23px;
+		float: right;
+		top: 52px;
 		.number {
 			font-size: 14.3em;
 			line-height: 55px;
