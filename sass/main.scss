@@ -257,6 +257,9 @@ html, body, #container {
 		color: white;
 		background-color: $primary-purple;
 	}
+	#shareButtons {
+		display: inline;
+	}
 }
 
 #intelRevo {
