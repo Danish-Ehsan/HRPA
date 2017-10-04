@@ -6,10 +6,9 @@ $(function() {
 	$copy.css({'opacity': '0', 'right': '50px'}); //, 'left': 'auto'});
 
 	function animate(e) {
-			e.animate({
-			opacity: '1',
-			right: '0px'
-		}, 1000);
+			e.css({
+			'opacity': '1',
+			'right': '0px'});
 	};
 
 	setInterval(function() {

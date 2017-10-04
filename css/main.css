@@ -78,7 +78,8 @@ html, body, #container {
     padding: 15px 0 15px 10%;
     margin: 0 auto;
     font-size: 15px;
-    position: relative; }
+    position: relative;
+    transition: left 0.25s; }
     #mobNav li:hover {
       left: 7px; }
 
@@ -180,7 +181,8 @@ html, body, #container {
     opacity: 0.8; }
 
 .copyAnim {
-  position: relative; }
+  position: relative;
+  transition: right 1s, opacity 1s; }
 
 .content {
   background-image: url("../images/Background_Dktp.jpg");
@@ -608,7 +610,7 @@ Media Queries
     #header #headerTitle {
       width: 200px;
       height: 200px;
-      top: 45%; }
+      top: 35%; }
     #header #headerText {
       top: 28px;
       left: 30px; }

@@ -2,6 +2,7 @@ $(function () {
 
 	var $window = $(window);
 	var $statList = $('.statAnim');
+	var $statsCont = $('#statsContainer')
 	//var $statListText = [];
 	var statCheck = 0;
 
@@ -10,7 +11,7 @@ $(function () {
 		var $statTextString = stat.text();
 		var $statText = parseInt($statTextString);
 		console.log(stat);
-		statCheck++;
+		statCheck = 1;
 
 
 		countInterval = setInterval(function() {
@@ -39,12 +40,13 @@ $(function () {
 	
 
 	setInterval(function() {
-		$statList.each(function() {
 			//statCheck = false;
-			if ( (($window.scrollTop() + $window.height()) > $(this).offset().top + 200) && statCheck <= 2 ) {
-				count($(this));
+			if ( (($window.scrollTop() + $window.height()) > $statsCont.offset().top + 200) && statCheck === 0 ) {
+				for (var i = 0; i < $statList.length; i++) {
+					count($statList.eq(i));
+				}
+				
 			}
-		});
 	}, 100);
 	
 

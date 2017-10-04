@@ -107,6 +107,7 @@ html, body, #container {
 		margin: 0 auto;
 		font-size: 15px;
 		position: relative;
+		transition: left 0.25s;
 		&:hover {
 			left: 7px;
 		}
@@ -236,6 +237,7 @@ html, body, #container {
 
 .copyAnim {
 	position: relative;
+	transition: right 1s, opacity 1s;
 }
 
 .content {
