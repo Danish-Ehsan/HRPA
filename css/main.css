@@ -16,7 +16,8 @@ html, body, #container {
     font-size: 2.9em; }
   html h2, body h2, #container h2 {
     color: #0b213f;
-    font-size: 2.4em; }
+    font-size: 2.4em;
+    color: #58595b; }
   html .grnDot, body .grnDot, #container .grnDot {
     color: #87be40; }
   html a, body a, #container a {
