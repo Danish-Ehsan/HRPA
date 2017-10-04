@@ -2,8 +2,10 @@ $(function() {
 
 	var $window = $(window);
 	var $copy = $('.copyAnim');
+	var $headAnim = $('.headerAnim');
 
 	$copy.css({'opacity': '0', 'right': '50px'}); //, 'left': 'auto'});
+	$headAnim.css({'opacity': '0', 'right': '50px'});
 
 	function animate(e) {
 			e.css({
@@ -24,5 +26,9 @@ $(function() {
 			}
 		});
 	}, 100);
+
+	$(window).on('load', function() {
+		animate($headAnim);
+	});
 
 });

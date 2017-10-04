@@ -185,9 +185,9 @@ html, body, #container {
     border: 20px solid #532d6d;
     z-index: -1;
     background-color: black;
-    opacity: 0.8; }
+    opacity: 0.75; }
 
-.copyAnim {
+.copyAnim, .headerAnim {
   position: relative;
   transition: right 1s, opacity 1s;
   -webkit-transition: right 1s, opacity 1s; }
@@ -400,7 +400,7 @@ html, body, #container {
     height: 100px;
     vertical-align: middle;
     text-align: center; }
-    #logoSlate #logos .copyAnim {
+    #logoSlate #logos .copyAnim, #logoSlate #logos .headerAnim {
       position: static; }
     #logoSlate #logos img {
       padding: 50px 40px 120px 40px;
