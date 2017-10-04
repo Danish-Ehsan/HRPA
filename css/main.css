@@ -372,11 +372,12 @@ html, body, #container {
 #archetypes {
   position: relative; }
   #archetypes .copy {
-    padding: 260px 100px; }
+    padding: 260px 100px;
+    width: 35%; }
   #archetypes #archetypeWheel {
     position: absolute;
     height: 550px;
-    right: 10%;
+    right: 5%;
     top: 50px; }
     #archetypes #archetypeWheel img {
       height: 100%;
