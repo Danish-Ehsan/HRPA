@@ -3,13 +3,13 @@ html, body, #container {
   font-family: "filson-pro", sans-serif;
   color: #58595b;
   position: relative;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 0.95em;
   letter-spacing: 0.3px;
   height: 100%; }
   html p, body p, #container p {
-    line-height: 1.5em;
-    font-size: 1.4em; }
+    line-height: 1.6em;
+    font-size: 1.3em; }
   html h1, body h1, #container h1 {
     color: #532d6d;
     font-weight: 900;
@@ -77,7 +77,10 @@ html, body, #container {
   #mobNav li {
     padding: 15px 0 15px 10%;
     margin: 0 auto;
-    font-size: 15px; }
+    font-size: 15px;
+    position: relative; }
+    #mobNav li:hover {
+      left: 7px; }
 
 #navButton {
   display: inline-block;
@@ -176,6 +179,9 @@ html, body, #container {
     background-color: black;
     opacity: 0.8; }
 
+.copyAnim {
+  position: relative; }
+
 .content {
   background-image: url("../images/Background_Dktp.jpg");
   background-size: 100% auto;
@@ -183,12 +189,14 @@ html, body, #container {
   background-attachment: fixed; }
   .content .copy {
     padding: 200px 100px;
-    width: 40%; }
+    width: 40%;
+    position: relative; }
   .content p {
     margin: 30px 0px; }
   .content h3 {
     font-size: 1.6em;
-    font-weight: 400;
+    font-weight: 700;
+    color: #87be40;
     display: inline; }
   .content .button {
     display: inline-block;
@@ -220,7 +228,8 @@ html, body, #container {
     left: 6%;
     top: 10%; }
     #intelRevo #circleGraphic img {
-      height: 100%; }
+      height: 100%;
+      transition: transform 0.25s; }
 
 #whitePaper {
   background-image: none;
@@ -314,7 +323,7 @@ html, body, #container {
       line-height: 55px;
       padding-bottom: 15px;
       color: #d9e059; }
-      #stats #stat1 .number span {
+      #stats #stat1 .number span.percent {
         font-size: 0.5em;
         position: relative;
         right: 55px; }
@@ -325,7 +334,7 @@ html, body, #container {
       font-size: 14.3em;
       line-height: 55px;
       padding-bottom: 15px; }
-      #stats #stat2 .number span {
+      #stats #stat2 .number span.percent {
         font-size: 0.5em;
         position: relative;
         right: 73px; }
@@ -337,7 +346,7 @@ html, body, #container {
       line-height: 55px;
       padding-bottom: 15px;
       color: #bfe076; }
-      #stats #stat3 .number span {
+      #stats #stat3 .number span.percent {
         font-size: 0.5em;
         position: relative;
         right: 40px; }
@@ -352,7 +361,9 @@ html, body, #container {
     right: 10%;
     top: 50px; }
     #archetypes #archetypeWheel img {
-      height: 100%; }
+      height: 100%;
+      transform-origin: 50% 50%;
+      transition: transform 0.25s; }
   #archetypes .button {
     margin-top: 40px; }
 
@@ -362,14 +373,15 @@ html, body, #container {
   #logoSlate p {
     width: 75%;
     margin: 0 auto;
-    padding: 50px;
-    font-size: 1.2em; }
+    padding: 50px; }
   #logoSlate #logos {
     display: inline;
     margin: 0 auto;
     height: 100px;
     vertical-align: middle;
     text-align: center; }
+    #logoSlate #logos .copyAnim {
+      position: static; }
     #logoSlate #logos img {
       padding: 50px 40px 120px 40px;
       width: 20%;

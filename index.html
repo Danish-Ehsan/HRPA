@@ -52,23 +52,27 @@
 				<div id="box"></div>
 
 				<div id="headerText">
+				<div class="copyAnim">
 					<h1>/ the Intelligence<br>Revolution<span class="grnDot">.</span></h1>
 					<h2>Future-proofing<br>Canada's workforce</h2>
+				</div>
 				</div>
 			</div>
 		</div>
 
 		<div id="intelRevo" class="content">
 			<div class="copy">
-				<div class="title">
-					<h2>What is</h2>
-					<h1>/ the Intelligence<br>Revolution?<span class="grnDot">.</span></h1>
+				<div class="copyAnim">
+					<div class="title">
+						<h2>What is</h2>
+						<h1>/ the Intelligence<br>Revolution?<span class="grnDot">.</span></h1>
+					</div>
+					<p>Automation, artificial  intelligence, and machine learning are revolutionizing the workplace, and redefining what a ‘job’ means.</p>
+					<h3>This, is the Intelligence Revolution.</h3>
 				</div>
-				<p>Automation, artificial  intelligence, and machine learning are revolutionizing the workplace, and redefining what a ‘job’ means.</p>
-				<h3>This, is the Intelligence Revolution.</h3>
 			</div>
 			<div id="circleGraphic">
-				<img src="images/Circle_Graphic.png">
+				<img id="intelRevoImg" src="images/Circle_Graphic.png">
 			</div>
 		</div><!--#intelRevo-->
 
@@ -81,14 +85,16 @@
 
 		<div id="whitePaper" class="content">
 			<div class="copy">
-				<div class="title">
-					<h1>/ The White Paper<span class="grnDot">.</span></h1>
-					<h2>Download it. Read it. Share it.</h2>
-				</div>
-				<p>This report contains a series of challenging and thought-provoking recommendations for action by all stakeholders.</p>
-				<a href="pdf/HRPA_Scripts.pdf" download><div class="button">Download it.</div></a>
-				<div id="shareButtons">
-				<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
+				<div class="copyAnim">
+					<div class="title">
+						<h1>/ The White Paper<span class="grnDot">.</span></h1>
+						<h2>Download it. Read it. Share it.</h2>
+					</div>
+					<p>This report contains a series of challenging and thought-provoking recommendations for action by all stakeholders.</p>
+					<a href="pdf/HRPA_Scripts.pdf" download><div class="button">Download it.</div></a>
+					<div id="shareButtons">
+					<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
+					</div>
 				</div>
 			</div>
 			<div id="reportMkup">
@@ -98,22 +104,24 @@
 
 		<div id="stats" class="content">
 			<div class="title">
-				<h2>The revolution</h2>
-				<h1>/ is real<span class="grnDot">.</span></h1>
+				<div class="copyAnim">
+					<h2>The revolution</h2>
+					<h1>/ is real<span class="grnDot">.</span></h1>
+				</div>
 			</div>
 
 			<p class="year">by 2018 up to</p>
 			<div id="statsContainer">
 				<div id="stat2" class="stat">
-					<p class="number">42</span><span class="percent">%</span></p>
+					<p class="number"><span class="statAnim">42</span></span><span class="percent">%</span></p>
 					<p class="statBody">of Canada’s workforce will be affected by automation</p>
 				</div>
 				<div id="stat1" class="stat">
-					<p class="number">30<span class="percent">%</span></p>
+					<p class="number"><span class="statAnim">30</span><span class="percent">%</span></p>
 					<p class="statBody">of new robots will be capable of working with humans</p>
 				</div>
 				<div id="stat3" class="stat">
-					<p class="number">41<span class="percent">%</span></p>
+					<p class="number"><span class="statAnim">41</span><span class="percent">%</span></p>
 					<p class="statBody">of companies are or have already adopted AI tech into their workforce</p>
 				</div>
 			</div>
@@ -128,13 +136,15 @@
 
 		<div id="archetypes" class="content">
 			<div id="archetypeWheel">
-				<img src="images/Archetypes_Wheel.png">
+				<img id="archWhlImg" src="images/Archetypes_Wheel.png">
 			</div>
 			<div class="copy">
-				<div class="title">
-					<h2>The new work</h2>
-					<h1>/ archetypes<span class="grnDot">.</span></h1>
-					<a href="pdf/HRPA_Scripts.pdf"><div class="button">Download it.</div></a>
+				<div class="copyAnim">
+					<div class="title">
+						<h2>The new work</h2>
+						<h1>/ archetypes<span class="grnDot">.</span></h1>
+						<a href="pdf/HRPA_Scripts.pdf"><div class="button">Download it.</div></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -149,8 +159,10 @@
 		<div id="logoSlate">
 			<p>We’re at a tipping point where machines are outsmarting humans. Now is the time for Canada to build on its strengths to develop a position of global leadership.</p>
 			<div id="logos">
-				<a href="https://www2.deloitte.com/" target="_blank"><img src="images/DEL_Logo.svg"></a>
-				<a href="https://www.hrpa.ca/" target="_blank"><img src="images/HRPA_Logo.svg"></a>
+				<div class="copyAnim">
+					<a href="https://www2.deloitte.com/" target="_blank"><img src="images/DEL_Logo.svg"></a>
+					<a href="https://www.hrpa.ca/" target="_blank"><img src="images/HRPA_Logo.svg"></a>
+				</div>
 			</div>
 		</div>
 
@@ -169,6 +181,9 @@
 	<script type="text/javascript" src="js/desktop_nav.js"></script>
 	<script type="text/javascript" src="js/mobile_nav.js"></script>
 	<script type="text/javascript" src="js/scroll_to.js"></script>
+	<script type="text/javascript" src="js/animation_rotate.js"></script>
+	<script type="text/javascript" src="js/animation_copy.js"></script>
+	<script type="text/javascript" src="js/animation_stats.js"></script>
 
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d2dce8a2c1469b"></script> 
 
