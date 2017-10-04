@@ -55,7 +55,12 @@ html, body, #container {
     font-weight: 500; }
     #nav ul li {
       display: inline;
-      padding: 20px 30px; }
+      padding: 20px 30px;
+      position: relative;
+      left: 0px;
+      transition: left 0.35s, color 0.35s; }
+      #nav ul li:hover {
+        left: 5px; }
 
 #mobNav {
   display: none;
@@ -80,7 +85,7 @@ html, body, #container {
     font-size: 15px;
     position: relative;
     left: 0px;
-    transition: left 0.45s; }
+    transition: left 0.35s, color 0.35s; }
     #mobNav li:hover {
       left: 7px; }
 
@@ -209,12 +214,16 @@ html, body, #container {
     padding: 14px 20px;
     margin-top: 20px;
     color: white;
-    background-color: #532d6d; }
+    background-color: #532d6d;
+    left: 0px;
+    transition: left 0.35s, color 0.35s; }
+    .content .button:hover {
+      left: 7px; }
   .content #shareButtons {
     display: inline;
     position: relative;
     top: 10px;
-    right: 3px; }
+    right: 2px; }
 
 #intelRevo {
   position: relative; }
@@ -411,7 +420,8 @@ html, body, #container {
     padding-top: 20px;
     font-weight: 300; }
     #footer ul a:hover {
-      font-weight: 400; }
+      font-weight: 400;
+      color: #d9e24d; }
     #footer ul li {
       display: inline;
       padding: 30px 30px;

@@ -20,7 +20,7 @@ $(function () {
 				stat.text(loopCount);
 				console.log('loopCount= ' + loopCount);
 			}		
-		}, 25);
+		}, 30);
 	}
 
 /*

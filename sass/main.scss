@@ -74,7 +74,12 @@ html, body, #container {
 		li {
 			display: inline;
 			padding: 20px 30px;
-
+			position: relative;
+			left: 0px;
+			transition: left 0.35s, color 0.35s;
+			&:hover {
+				left: 5px;
+			}
 		}
 	}
 }
@@ -108,7 +113,7 @@ html, body, #container {
 		font-size: 15px;
 		position: relative;
 		left: 0px;
-		transition: left 0.45s;
+		transition: left 0.35s, color 0.35s;
 		&:hover {
 			left: 7px;
 		}
@@ -269,12 +274,18 @@ html, body, #container {
 		margin-top: 20px;
 		color: white;
 		background-color: $primary-purple;
+		left: 0px;
+		transition: left 0.35s, color 0.35s;
+		&:hover {
+			left: 7px;
+		}
+
 	}
 	#shareButtons {
 		display: inline;
 		position: relative;
 		top: 10px;
-		right: 3px;
+		right: 2px;
 	}
 }
 
@@ -509,6 +520,7 @@ html, body, #container {
 		font-weight: 300;
 		a:hover {
 			font-weight: 400;
+			color: $secondary-green;
 		}
 		li {
 			display: inline;
