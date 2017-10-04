@@ -79,7 +79,8 @@ html, body, #container {
     margin: 0 auto;
     font-size: 15px;
     position: relative;
-    transition: left 0.25s; }
+    left: 0px;
+    transition: left 0.45s; }
     #mobNav li:hover {
       left: 7px; }
 
@@ -182,7 +183,8 @@ html, body, #container {
 
 .copyAnim {
   position: relative;
-  transition: right 1s, opacity 1s; }
+  transition: right 1s, opacity 1s;
+  -webkit-transition: right 1s, opacity 1s; }
 
 .content {
   background-image: url("../images/Background_Dktp.jpg");
@@ -231,7 +233,8 @@ html, body, #container {
     top: 10%; }
     #intelRevo #circleGraphic img {
       height: 100%;
-      transition: transform 0.25s; }
+      transition: transform 0.25s;
+      -webkit-transition: transform 0.25s; }
 
 #whitePaper {
   background-image: none;
@@ -365,7 +368,8 @@ html, body, #container {
     #archetypes #archetypeWheel img {
       height: 100%;
       transform-origin: 50% 50%;
-      transition: transform 0.25s; }
+      transition: transform 0.25s;
+      -webkit-transition: transform 0.25s; }
   #archetypes .button {
     margin-top: 40px; }
 

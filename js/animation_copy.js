@@ -12,10 +12,16 @@ $(function() {
 	};
 
 	setInterval(function() {
-		$copy.each( function() {
-			if (($window.scrollTop() + 650) >= ($(this).offset().top)) {
-				animate($(this));
-			};
+		$copy.each(function() {
+			if ($window.width() > 600) {
+				if (($window.scrollTop() + 650) >= ($(this).offset().top)) {
+					animate($(this));
+				}
+			} else {
+				if (($window.scrollTop() + 550) >= ($(this).offset().top)) {
+					animate($(this));
+				}
+			}
 		});
 	}, 100);
 
