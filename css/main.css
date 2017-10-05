@@ -259,6 +259,8 @@ html, body, #container {
   background-image: none;
   background-color: white;
   position: relative; }
+  #whitePaper .copy {
+    padding-bottom: 175px; }
   #whitePaper h2 {
     font-size: 2em;
     margin-top: 5px; }
