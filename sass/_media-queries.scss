@@ -206,6 +206,9 @@ Media Queries
 		ul {
 			li {
 				padding: 18px;
+				&:last-child {
+					padding: 5px 18px;
+				}
 				a {
 					padding: 15px;
 				}
@@ -379,22 +382,22 @@ Media Queries
 
 	#footer {
 		height: 120px;
+		background: -webkit-linear-gradient(-20deg, $secondary-green, $secondary-green 20%, $primary-purple 20%); /* For Safari 5.1 to 6.0 */
+  		background: -o-linear-gradient(-20deg, $secondary-green, $secondary-green 20%, $primary-purple 20%); /* For Opera 11.1 to 12.0 */
+  		background: -moz-linear-gradient(-20deg, $secondary-green, $secondary-green 20%, $primary-purple 20%); /* For Firefox 3.6 to 15 */
+  		background: linear-gradient(-20deg, $secondary-green, $secondary-green 20%, $primary-purple 20%); /* Standard syntax */
 		ul {
 			width: 95%;
 			font-weight: 400;
+
 			li {
+
 				padding: 0px;
 				&:last-child {
-					padding: 5px 12px;
+					padding: 0px 12px;
 				}
 			}
 		}
 	}
 
 }
-
-
-
-
-
-
