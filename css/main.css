@@ -735,6 +735,8 @@ Media Queries
       width: 95%;
       font-weight: 400; }
       #footer ul li {
-        padding: 10px; } }
+        padding: 0px; }
+        #footer ul li:last-child {
+          padding: 5px 12px; } }
 
 /*# sourceMappingURL=main.css.map */

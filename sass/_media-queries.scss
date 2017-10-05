@@ -383,7 +383,10 @@ Media Queries
 			width: 95%;
 			font-weight: 400;
 			li {
-				padding: 10px;
+				padding: 0px;
+				&:last-child {
+					padding: 5px 12px;
+				}
 			}
 		}
 	}
