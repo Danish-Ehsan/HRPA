@@ -28,8 +28,10 @@ $(function() {
 		});
 	}, 100);
 
-	$headAnim.show();
-	animate($headAnim);
+	setTimeout(function() {
+		$headAnim.show();
+		animate($headAnim);
+	}, 800);
 
 /*
 	$(window).on('load', function() {

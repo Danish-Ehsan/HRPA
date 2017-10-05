@@ -503,6 +503,7 @@ html, body, #container {
 #logoSlate {
 	text-align: center;
 	background-color: white;
+	padding-bottom: 70px;
 	p {
 		width: 75%;
 		margin: 0 auto;
@@ -518,9 +519,15 @@ html, body, #container {
 			position: static;
 		}
 		img {
-			padding: 50px 40px 120px 40px;
+			padding: 50px 40px 50px 40px;
 			width: 20%;
 			vertical-align: middle;
+			position: relative;
+			left: 0;
+			transition: left 0.35s;
+			&:hover {
+				left: 5px;
+			}
 		}
 	}
 }
@@ -542,7 +549,7 @@ video {
 		text-align: center;
 		margin: 0 auto;
 		padding-top: 20px;
-		font-weight: 300;
+		font-weight: 400;
 		a:hover {
 			font-weight: 400;
 			color: $secondary-green;
@@ -550,16 +557,19 @@ video {
 		li {
 			display: inline;
 			color: white;
-			padding: 18px;
+			padding: 30px;
 			&:last-child {
-				padding: 18px 33px;
+				padding: 30px 60px;
 			}
 			a {
-				padding: 15px;
+				padding: 30px;
 				color: white;
 				font-size: 1em;
+				position: relative;
+				left: 0;
+				transition: color 0.35s, left 0.35s;
 				&:hover {
-
+					left: 5px;
 				}
 			}
 		}

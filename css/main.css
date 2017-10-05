@@ -395,7 +395,8 @@ html, body, #container {
 
 #logoSlate {
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  padding-bottom: 70px; }
   #logoSlate p {
     width: 75%;
     margin: 0 auto;
@@ -409,9 +410,14 @@ html, body, #container {
     #logoSlate #logos .copyAnim, #logoSlate #logos .headerAnim {
       position: static; }
     #logoSlate #logos img {
-      padding: 50px 40px 120px 40px;
+      padding: 50px 40px 50px 40px;
       width: 20%;
-      vertical-align: middle; }
+      vertical-align: middle;
+      position: relative;
+      left: 0;
+      transition: left 0.35s; }
+      #logoSlate #logos img:hover {
+        left: 5px; }
 
 video {
   width: 100%;
@@ -433,20 +439,25 @@ video {
     text-align: center;
     margin: 0 auto;
     padding-top: 20px;
-    font-weight: 300; }
+    font-weight: 400; }
     #footer ul a:hover {
       font-weight: 400;
       color: #d9e24d; }
     #footer ul li {
       display: inline;
       color: white;
-      padding: 18px; }
+      padding: 30px; }
       #footer ul li:last-child {
-        padding: 18px 33px; }
+        padding: 30px 60px; }
       #footer ul li a {
-        padding: 15px;
+        padding: 30px;
         color: white;
-        font-size: 1em; }
+        font-size: 1em;
+        position: relative;
+        left: 0;
+        transition: color 0.35s, left 0.35s; }
+        #footer ul li a:hover {
+          left: 5px; }
 
 /*-----------------------------------
 Media Queries
@@ -597,7 +608,12 @@ Media Queries
     width: 65%; }
 
   #logoSlate #logos img {
-    width: 30%; } }
+    width: 30%; }
+
+  #footer ul li {
+    padding: 18px; }
+    #footer ul li a {
+      padding: 15px; } }
 @media screen and (max-width: 600px) {
   html, body, #container {
     font-size: 0.9em;
