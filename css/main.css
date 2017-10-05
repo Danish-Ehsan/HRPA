@@ -55,13 +55,15 @@ html, body, #container {
     font-size: 0.95em;
     font-weight: 500; }
     #nav ul li {
-      display: inline;
-      padding: 20px 30px;
-      position: relative;
-      left: 0px;
-      transition: left 0.35s, color 0.35s; }
-      #nav ul li:hover {
-        left: 5px; }
+      display: inline; }
+      #nav ul li a {
+        position: relative;
+        left: 0px;
+        transition: left 0.35s, color 0.35s;
+        padding: 20px 30px; }
+        #nav ul li a:hover {
+          left: 5px;
+          color: #d9e24d; }
 
 #mobNav {
   display: none;
@@ -81,14 +83,18 @@ html, body, #container {
     margin: 10px auto;
     font-weight: 400; }
   #mobNav li {
-    padding: 15px 0 15px 10%;
     margin: 0 auto;
     font-size: 15px;
-    position: relative;
-    left: 0px;
-    transition: left 0.35s, color 0.35s; }
-    #mobNav li:hover {
-      left: 7px; }
+    padding: 15px 0 15px 10%; }
+    #mobNav li a {
+      padding: 10px 10px;
+      letter-spacing: 0.8px;
+      position: relative;
+      left: 0px;
+      transition: left 0.35s, color 0.35s; }
+      #mobNav li a:hover {
+        left: 7px;
+        color: #d9e24d; }
 
 #navButton {
   display: inline-block;
@@ -407,6 +413,10 @@ html, body, #container {
       width: 20%;
       vertical-align: middle; }
 
+video {
+  width: 100%;
+  height: auto; }
+
 #footer {
   height: 150px;
   background-color: #532d6d;
@@ -429,8 +439,14 @@ html, body, #container {
       color: #d9e24d; }
     #footer ul li {
       display: inline;
-      padding: 30px 30px;
-      color: white; }
+      color: white;
+      padding: 18px; }
+      #footer ul li:last-child {
+        padding: 18px 33px; }
+      #footer ul li a {
+        padding: 15px;
+        color: white;
+        font-size: 1em; }
 
 /*-----------------------------------
 Media Queries

@@ -74,12 +74,17 @@ html, body, #container {
 		font-weight: 500;
 		li {
 			display: inline;
-			padding: 20px 30px;
-			position: relative;
-			left: 0px;
-			transition: left 0.35s, color 0.35s;
-			&:hover {
-				left: 5px;
+			a {
+				position: relative;
+				left: 0px;
+				transition: left 0.35s, color 0.35s;
+				padding: 20px 30px;
+				&:hover {
+					left: 5px;
+					color: $secondary-green;
+
+			}
+
 			}
 		}
 	}
@@ -109,15 +114,20 @@ html, body, #container {
 	}
 
 	li {
-		padding: 15px 0 15px 10%;
 		margin: 0 auto;
 		font-size: 15px;
-		position: relative;
-		left: 0px;
-		transition: left 0.35s, color 0.35s;
-		&:hover {
-			left: 7px;
-		}
+		padding: 15px 0 15px 10%;
+		a {
+			padding: 10px 10px;
+			letter-spacing: 0.8px;
+			position: relative;
+			left: 0px;
+			transition: left 0.35s, color 0.35s;
+			&:hover {
+				left: 7px;
+				color: $secondary-green;
+			}
+		}	
 	}
 }
 
@@ -515,6 +525,11 @@ html, body, #container {
 	}
 }
 
+video {
+	width: 100%;
+	height: auto;
+}
+
 #footer {
 	height: 150px;
 	background-color: $primary-purple;
@@ -534,8 +549,19 @@ html, body, #container {
 		}
 		li {
 			display: inline;
-			padding: 30px 30px;
 			color: white;
+			padding: 18px;
+			&:last-child {
+				padding: 18px 33px;
+			}
+			a {
+				padding: 15px;
+				color: white;
+				font-size: 1em;
+				&:hover {
+
+				}
+			}
 		}
 	}
 }

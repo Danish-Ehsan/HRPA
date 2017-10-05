@@ -5,7 +5,8 @@ $(function() {
 	var $headAnim = $('.headerAnim');
 
 	$copy.css({'opacity': '0', 'right': '50px'}); //, 'left': 'auto'});
-	$headAnim.css({'opacity': '0', 'right': '50px'});
+
+	$headAnim.hide().css({'opacity': '0', 'right': '50px'});
 
 	function animate(e) {
 			e.css({
@@ -27,8 +28,12 @@ $(function() {
 		});
 	}, 100);
 
-	$(window).on('load', function() {
-		animate($headAnim);
-	});
+	$headAnim.show();
+	animate($headAnim);
 
+/*
+	$(window).on('load', function() {
+		$headAnim.show().animate();
+	});
+*/
 });
