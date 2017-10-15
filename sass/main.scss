@@ -279,14 +279,15 @@ html, body, #container {
 		font-size: 1.6em;
 		font-weight: 700;
 		color: $primary-green;
-		display: inline;
+		display: block;
+		margin-bottom: 30px;
 	}
 	.button {
 		display: inline-block;
 		position: relative;
 		font-weight: 700;
 		padding: 14px 20px;
-		margin-top: 20px;
+		margin-top: 10px;
 		color: white;
 		background-color: $primary-purple;
 		left: 0px;

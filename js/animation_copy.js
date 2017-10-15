@@ -21,7 +21,7 @@ $(function() {
 					animate($(this));
 				}
 			} else {
-				if (($window.scrollTop() + 550) >= ($(this).offset().top)) {
+				if (($window.scrollTop() + 500) >= ($(this).offset().top)) {
 					animate($(this));
 				}
 			}

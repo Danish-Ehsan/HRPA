@@ -213,13 +213,14 @@ html, body, #container {
     font-size: 1.6em;
     font-weight: 700;
     color: #87be40;
-    display: inline; }
+    display: block;
+    margin-bottom: 30px; }
   .content .button {
     display: inline-block;
     position: relative;
     font-weight: 700;
     padding: 14px 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
     background-color: #532d6d;
     left: 0px;
@@ -600,13 +601,13 @@ Media Queries
     top: 0;
     height: auto;
     margin: 0px auto 0 auto;
-    padding-top: 75px; }
+    padding-bottom: 75px; }
     #archetypes #archetypeWheel img {
       height: auto;
       width: 100%; }
   #archetypes .copy {
     margin: 0 auto;
-    padding: 60px 0 150px 0;
+    padding: 100px 0 80px 0;
     width: 65%; }
 
   #logoSlate #logos img {
@@ -716,7 +717,7 @@ Media Queries
 
   #archetypes .copy {
     width: 67%;
-    padding-bottom: 70px; }
+    padding-bottom: 50px; }
   #archetypes #archetypeWheel {
     width: 75%; }
 
