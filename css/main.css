@@ -279,109 +279,75 @@ html, body, #container {
       /* Chrome, Safari, Opera */
       transform: rotate(7deg); }
 
-#stats {
-  /*
-  #stat2 {
-  	float: left;
-  	margin: 0 auto;
-  	position: relative;
-  	.number {
-  		text-transform: uppercase;
-  		position: relative;
-  		left: 25px;
-  		top: 2px;
-  		font-size: 4.5em;
-  		line-height: 40px;
-  		padding-bottom: 15px;
-  		span#dash {
-  			position: relative;
-  			font-size: 0.7em;
-  			top: 5px;
-  		}
-  		span.percent {
-  			font-size: 1.5em;
-  			position: relative;
-  			right: 55px;
-  			top: 30px;
-  		}
-  		span#fourtyTwo {
-  			font-size: 2.55em;
-  			position: relative;
-  			top: 30px;
-  			right: 10px;
-  		}
-  	}
-  }
-  */ }
-  #stats .title {
-    padding: 100px 100px 0px 100px; }
-  #stats .year {
-    width: 80%;
-    font-weight: 400;
-    font-size: 1.25em;
-    margin: 60px auto 0px auto; }
-  #stats #statsContainer {
-    text-align: center;
-    vertical-align: baseline;
-    top: 15px;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 125px;
-    font-size: 0.8em;
-    font-weight: 400;
-    position: relative; }
-  #stats .statBody {
-    position: relative;
-    top: 5px; }
-  #stats .stat {
-    text-align: left;
-    width: 250px;
-    display: inline-block; }
-    #stats .stat .number {
-      color: #87be40;
-      font-weight: 900; }
-    #stats .stat .percent {
-      color: #532d6d;
-      font-weight: 900; }
-  #stats #stat1 {
-    position: relative; }
-    #stats #stat1 .number {
-      font-size: 14.3em;
-      line-height: 55px;
-      padding-bottom: 15px;
-      color: #d9e059; }
-      #stats #stat1 .number span.percent {
-        font-size: 0.5em;
-        position: relative;
-        right: 55px; }
-  #stats #stat2 {
-    position: relative;
-    float: left; }
-    #stats #stat2 .number {
-      font-size: 14.3em;
-      line-height: 55px;
-      padding-bottom: 15px; }
-      #stats #stat2 .number span.percent {
-        font-size: 0.5em;
-        position: relative;
-        right: 73px; }
-  #stats #stat3 {
-    position: relative;
-    float: right; }
-    #stats #stat3 .number {
-      font-size: 14.3em;
-      line-height: 55px;
-      padding-bottom: 15px;
-      color: #bfe076; }
-      #stats #stat3 .number span.percent {
-        font-size: 0.5em;
-        position: relative;
-        right: 40px; }
+#stats .title {
+  padding: 100px 100px 0px 100px; }
+#stats .year {
+  width: 80%;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 60px auto 0px auto; }
+#stats #statsContainer {
+  text-align: center;
+  vertical-align: baseline;
+  top: 15px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 125px;
+  font-size: 0.8em;
+  font-weight: 400;
+  position: relative; }
+#stats .statBody {
+  position: relative;
+  top: 5px; }
+#stats .stat {
+  text-align: left;
+  width: 250px;
+  display: inline-block; }
+  #stats .stat .number {
+    color: #87be40;
+    font-weight: 900; }
+  #stats .stat .percent {
+    color: #532d6d;
+    font-weight: 900; }
+#stats #stat1 {
+  position: relative; }
+  #stats #stat1 .number {
+    font-size: 14.3em;
+    line-height: 55px;
+    padding-bottom: 15px;
+    color: #d9e059; }
+    #stats #stat1 .number span.percent {
+      font-size: 0.5em;
+      position: relative;
+      right: 55px; }
+#stats #stat2 {
+  position: relative;
+  float: left; }
+  #stats #stat2 .number {
+    font-size: 14.3em;
+    line-height: 55px;
+    padding-bottom: 15px; }
+    #stats #stat2 .number span.percent {
+      font-size: 0.5em;
+      position: relative;
+      right: 73px; }
+#stats #stat3 {
+  position: relative;
+  float: right; }
+  #stats #stat3 .number {
+    font-size: 14.3em;
+    line-height: 55px;
+    padding-bottom: 15px;
+    color: #bfe076; }
+    #stats #stat3 .number span.percent {
+      font-size: 0.5em;
+      position: relative;
+      right: 40px; }
 
 #archetypes {
   position: relative; }
   #archetypes .copy {
-    padding: 260px 100px;
+    padding: 290px 100px;
     width: 35%; }
   #archetypes #archetypeWheel {
     position: absolute;
@@ -502,7 +468,9 @@ Media Queries
     left: 10px; }
 
   #archetypes #archetypeWheel {
-    right: 5%; } }
+    right: 5%; }
+  #archetypes .copy {
+    padding: 270px 100px; } }
 @media screen and (max-width: 1000px) {
   .content {
     background-attachment: scroll; }

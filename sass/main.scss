@@ -414,40 +414,6 @@ html, body, #container {
 		}
 	}
 
-	/*
-	#stat2 {
-		float: left;
-		margin: 0 auto;
-		position: relative;
-		.number {
-			text-transform: uppercase;
-			position: relative;
-			left: 25px;
-			top: 2px;
-			font-size: 4.5em;
-			line-height: 40px;
-			padding-bottom: 15px;
-			span#dash {
-				position: relative;
-				font-size: 0.7em;
-				top: 5px;
-			}
-			span.percent {
-				font-size: 1.5em;
-				position: relative;
-				right: 55px;
-				top: 30px;
-			}
-			span#fourtyTwo {
-				font-size: 2.55em;
-				position: relative;
-				top: 30px;
-				right: 10px;
-			}
-		}
-	}
-	*/
-
 	#stat2 {
 		position: relative;
 		float: left;
@@ -484,7 +450,7 @@ html, body, #container {
 #archetypes {
 	position: relative;
 	.copy {
-		padding: 260px 100px;
+		padding: 290px 100px;
 		width: 35%;
 	}
 	#archetypeWheel {
